@@ -1,0 +1,193 @@
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ClashDisplay */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Extralight.otf);
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Light.otf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Medium.otf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Semibold.otf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url(ClashDisplay_Complete/ClashDisplay-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Satoshi
+* Designed by: Deni Anggara
+* URL: https://www.fontshare.com/fonts/satoshi
+* © 2025 Indian Type Foundry
+*
+* Satoshi Light 
+* Satoshi LightItalic 
+* Satoshi Regular 
+* Satoshi Italic 
+* Satoshi Medium 
+* Satoshi MediumItalic 
+* Satoshi Bold 
+* Satoshi BoldItalic 
+* Satoshi Black 
+* Satoshi BlackItalic 
+* Satoshi Variable (Variable font)
+* Satoshi VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Light.otf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-LightItalic.otf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Regular.otf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Italic.otf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Medium.otf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-MediumItalic.otf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-BoldItalic.otf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-Black.otf);
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url(Satoshi_Complete/Satoshi-BlackItalic.otf);
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmaYcb_3TqPA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmaYcV_3Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
