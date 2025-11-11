@@ -10,6 +10,7 @@
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous"
         />
+
         <link rel="stylesheet" href="fonts/fonts.css" />
         <link rel="stylesheet" href="fonts/fonts-icons.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -22,10 +23,11 @@
         />
     </head>
     <body>
-        <div id="wrapper">
+        <div id="wrapper ">
+            <!-- header -->
             <header
                 id="header"
-                class="header-default w-1770 m-auto h-120 d-flex border-b justify-content-between align-items-center gap-25"
+                class="header-default w-1770 m-auto h-122 d-flex border-b justify-content-between align-items-center gap-25"
             >
                 <div
                     class="d-flex justify-content-between align-items-center h-full"
@@ -37,8 +39,65 @@
                             class="logo"
                         />
                     </div>
-                    <div class="p-l-85">
-                        <img src="./image/menu/menu.png" />
+                    <div class="d-flex h-full font-clash-display">
+                        <div class="px-85 center parent-menu">
+                            <img src="./image/menu/menu.png" />
+                            <span class="icon-close text-white"></span>
+                        </div>
+                        <ul class="d-flex text-14">
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#">HOME</a>
+                                </div>
+                                <div class="sub-menu text-white h-full">
+                                    <div class="d-grid sub-menu-list w-full">
+                                        <div
+                                            class="g-col-3 p-10 border-style-2 sub-item"
+                                        >
+                                            <div
+                                                class="d-flex flex-column align-items-center"
+                                            >
+                                                <img src="" />
+                                                <p class="">HOME 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#"
+                                        >ABOUT STUDIO</a
+                                    >
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#">PAGES</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#">PORTFOLIO</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#">BLOG</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="parent-menu d-flex gap-1">
+                                    <p>//</p>
+                                    <a class="menu-text" href="#">CONTACT US</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="d-flex flex-row gap-25">
@@ -53,6 +112,11 @@
                     </div>
                 </div>
             </header>
+            <!-- /header -->
+            <!-- footer -->
+            <footer></footer>
+            <!-- /footer -->
         </div>
+        <script src="./js/selection.json"></script>
     </body>
 </html>

@@ -140,11 +140,11 @@ img {
 }
 
 .row {
-    margin-right: -12px;
-    margin-left: -12px;
+    margin-right: -15px;
+    margin-left: -15px;
     > * {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -320,16 +320,6 @@ a {
     padding-left: 15px;
     width: 1320px;
     max-width: 100%;
-
-    .row {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-
-        > * {
-            padding-left: 15px !important;
-            padding-right: 15px !important;
-        }
-    }
 }
 
 .w-1850 {
@@ -369,9 +359,13 @@ a {
     width: fit-content;
 }
 
+.w-initial {
+    width: initial;
+}
+
 // height
-.h-120 {
-    height: 120px;
+.h-122 {
+    height: 122px;
 }
 
 .h-full {
@@ -385,6 +379,32 @@ a {
 // padding
 .p-15 {
     padding: 15px;
+}
+
+.px-85 {
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+// text
+.text-14 {
+    font-size: 14px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+// font
+
+.font-satoshi {
+    font-family: $font-satoshi;
+}
+.font-clash-display {
+    font-family: $font-clash-display;
+}
+.font-six-caps {
+    font-family: $font-six-caps;
 }
 
 // position
@@ -425,7 +445,7 @@ a {
 
 // border
 
-.border-2 {
+.border-style-2 {
     border: 1px solid var(--out-line-2);
 }
 
@@ -458,7 +478,24 @@ a {
 }
 
 // gap
-
 .gap-25 {
     gap: 25px;
+}
+
+.parent-menu {
+    &:hover + .sub-menu {
+        // display: block;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+}
+
+.sub-menu {
+    // display: none;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50%);
 }
