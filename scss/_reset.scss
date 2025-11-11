@@ -389,6 +389,32 @@ a {
 
 // position
 
+.ab-center-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ab-center-horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ab-center-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+// top
+
+// right
+.right-32 {
+    right: 32px;
+}
 // circle
 
 .circle-50 {

@@ -21,7 +21,6 @@
 .btn-style-1 {
   height: 50px !important;
   border-radius: 9999px;
-  border: 1px solid var(--out-line);
   justify-content: flex-start;
   text-align: left;
 }
@@ -465,6 +464,30 @@ a:focus, a:hover {
 
 .p-15 {
   padding: 15px;
+}
+
+.ab-center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ab-center-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ab-center-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.right-32 {
+  right: 32px;
 }
 
 .circle-50 {
