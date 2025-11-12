@@ -22,3 +22,19 @@
     opacity: 1;
     visibility: visible;
 }
+
+@mixin dropdown($submenu) {
+    &:hover #{$submenu} {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+
+    #{$submenu} {
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
