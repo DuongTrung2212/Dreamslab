@@ -18,24 +18,39 @@
             position: relative;
             align-items: center;
             justify-content: center;
-            .menu-text {
+            .menu-text,
+            span {
                 display: inline-block;
-                transform: translate3d(0, 0, 0);
-                opacity: 1;
-                transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+                transition: 0.35s cubic-bezier(0.25, 1, 0.5, 1),
                     opacity 0.35s ease;
                 will-change: transform, opacity;
                 backface-visibility: hidden;
             }
+
+            .menu-text {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+
+            span {
+                transform: translate3d(8px, 0, 0);
+                opacity: 0;
+            }
             &:hover {
-                color: var(--out-line);
+                span {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                }
                 .menu-text {
-                    transform: translate3d(0, -8px, 0);
+                    transform: translate3d(8px, 0, 0);
                     opacity: 1;
                 }
             }
         }
     }
+}
+
+.menu-item {
 }
 
 .home-sub-menu {
