@@ -107,8 +107,38 @@
 .btn-style-1 {
   height: 50px !important;
   border-radius: 9999px;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: left;
+}
+
+.btn-hover-center:hover {
+  gap: 10px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: justify-content 0s;
+}
+.btn-hover-center:hover span:nth-child(1) {
+  transform: translateX(20px);
+}
+.btn-hover-center:hover span:nth-child(2) {
+  transform: translateX(-20px);
+}
+
+.btn-hover-center span {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: translateX(0);
+}
+
+#footer .footer-logo {
+  margin-bottom: 130px;
+}
+#footer .title {
+  margin-bottom: 70px;
+}
+#footer .text-inner {
+  margin-bottom: 75px;
+}
+#footer .social-tag {
+  margin-top: 140px;
 }
 
 html,
@@ -524,6 +554,49 @@ a:focus, a:hover {
   padding-right: 15px;
 }
 
+/* Typography
+-------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  color: var(--white);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 385px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 200px;
+  line-height: 90px;
+}
+
+h3 {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+h4 {
+  font-size: 50px;
+  line-height: 90px;
+}
+
+h5 {
+  font-size: 45px;
+  line-height: 90px;
+}
+
+h6 {
+  font-size: 35px;
+  line-height: 90px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -538,6 +611,10 @@ a:focus, a:hover {
 
 .min-w-325 {
   min-width: 325px;
+}
+
+.max-w-325 {
+  max-width: 325;
 }
 
 .w-max-content {
@@ -564,14 +641,17 @@ a:focus, a:hover {
   padding: 15px;
 }
 
+.p-35 {
+  padding: 35px;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
 .px-15 {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.py-9 {
-  padding-top: 9px;
-  padding-bottom: 9px;
 }
 
 .px-26 {
@@ -579,9 +659,24 @@ a:focus, a:hover {
   padding-right: 26px;
 }
 
+.px-75 {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .px-85 {
   padding-left: 85px;
   padding-right: 85px;
+}
+
+.py-9 {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.py-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .text-14 {
@@ -590,6 +685,22 @@ a:focus, a:hover {
 
 .text-16 {
   font-size: 16px;
+}
+
+.text-18 {
+  font-size: 18px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-22 {
+  font-size: 22px;
+}
+
+.text-primary-2 {
+  color: var(--primary-2);
 }
 
 .font-satoshi {
@@ -602,6 +713,10 @@ a:focus, a:hover {
 
 .font-six-caps {
   font-family: "Six Caps", sans-serif;
+}
+
+.bg-gray-btn {
+  background-color: rgba(248, 248, 248, 0.1019607843);
 }
 
 .ab-center-vertical {
@@ -651,7 +766,11 @@ a:focus, a:hover {
 .circle-50 {
   width: 50px;
   height: 50px;
-  border-radius: 9999px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .border-style-2 {
@@ -684,8 +803,16 @@ a:focus, a:hover {
   align-items: center;
 }
 
+.gap-18 {
+  gap: 18px;
+}
+
 .gap-25 {
   gap: 25px;
+}
+
+.gap-30 {
+  gap: 30px;
 }
 
 .parent-menu:hover .sub-menu {
@@ -756,6 +883,10 @@ a:focus, a:hover {
   transform: translateX(0);
   transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s;
   pointer-events: auto;
+}
+
+.text-hover-white:hover {
+  color: var(--white);
 }
 
 /*# sourceMappingURL=styles.css.map */

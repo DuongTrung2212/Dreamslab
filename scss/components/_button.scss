@@ -1,6 +1,23 @@
 .btn-style-1 {
     height: 50px !important;
     border-radius: 9999px;
-    justify-content: flex-start;
+    justify-content: space-between;
     text-align: left;
+}
+
+.btn-hover-center:hover {
+    gap: 10px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: justify-content 0s;
+    span:nth-child(1) {
+        transform: translateX(20px);
+    }
+    span:nth-child(2) {
+        transform: translateX(-20px);
+    }
+}
+
+.btn-hover-center span {
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: translateX(0);
 }

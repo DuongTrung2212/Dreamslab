@@ -353,6 +353,48 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* Typography
+-------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-rendering: optimizeLegibility;
+    color: var(--white);
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 385px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 200px;
+    line-height: 90px;
+}
+
+h3 {
+    font-size: 60px;
+    line-height: 90px;
+}
+h4 {
+    font-size: 50px;
+    line-height: 90px;
+}
+h5 {
+    font-size: 45px;
+    line-height: 90px;
+}
+h6 {
+    font-size: 35px;
+    line-height: 90px;
+}
+
 // width
 
 .w-full {
@@ -369,6 +411,10 @@ a {
 
 .min-w-325 {
     min-width: 325px;
+}
+
+.max-w-325 {
+    max-width: 325;
 }
 
 .w-max-content {
@@ -395,25 +441,42 @@ a {
 .p-15 {
     padding: 15px;
 }
+
+.p-35 {
+    padding: 35px;
+}
+
+.p-100 {
+    padding: 100px;
+}
+
 .px-15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.px-26 {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.px-75 {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+.px-85 {
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 .py-9 {
     padding-top: 9px;
     padding-bottom: 9px;
 }
-.px-26 {
-    padding-left: 26px;
-    padding-right: 26px;
+.py-35 {
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
-
-.px-85 {
-    padding-left: 85px;
-    padding-right: 85px;
-}
-
 // text
 .text-14 {
     font-size: 14px;
@@ -421,6 +484,24 @@ a {
 
 .text-16 {
     font-size: 16px;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-22 {
+    font-size: 22px;
+}
+
+// color
+
+.text-primary-2 {
+    color: var(--primary-2);
 }
 
 // font
@@ -433,6 +514,12 @@ a {
 }
 .font-six-caps {
     font-family: $font-six-caps;
+}
+
+// background
+
+.bg-gray-btn {
+    background-color: #f8f8f81a;
 }
 
 // position
@@ -491,7 +578,11 @@ a {
 .circle-50 {
     width: 50px;
     height: 50px;
-    border-radius: 9999px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // border
@@ -531,8 +622,16 @@ a {
 }
 
 // gap
+
+.gap-18 {
+    gap: 18px;
+}
+
 .gap-25 {
     gap: 25px;
+}
+.gap-30 {
+    gap: 30px;
 }
 
 .parent-menu {
@@ -590,4 +689,10 @@ a {
     transform: translateX(0);
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s;
     pointer-events: auto;
+}
+
+// hover
+
+.text-hover-white:hover {
+    color: var(--white);
 }
