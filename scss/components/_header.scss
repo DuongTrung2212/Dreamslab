@@ -34,48 +34,37 @@
                     opacity: 1;
                 }
             }
-            .home-sub-menu {
-                position: fixed;
-                width: 100vw;
-                left: 0;
-                right: 0;
-                top: 122px;
-                overflow-y: auto;
-                .sub-menu-list {
-                    padding: 30px 60px 0 60px;
-                    gap: 10px;
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    .sub-item {
-                        border: 1px solid var(--out-line-2);
-                        border-radius: 8px;
-                        padding: 24px;
-                        font-size: 16px;
-                        font-weight: 500;
-                        img {
-                            height: 350px;
-                        }
-                    }
-                }
-            }
-            // .pages-sub-menu {
-            //     padding: 15px 0px;
-            //     li {
-            //         p {
-            //             padding: 0px 25px;
-            //         }
-            //     }
-            // }
         }
     }
 }
 
-// body:has(.search-btn:active),
-// body:has(.search-btn:focus) {
-//     .search-overlay {
-//         display: block;
-//     }
-// }
+.home-sub-menu {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 122px;
+    overflow-y: auto;
+    background-color: var(--primary);
+
+    .sub-menu-list {
+        padding: 30px 60px 0 60px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .sub-item {
+            border: 1px solid var(--out-line-2);
+            border-radius: 8px;
+            padding: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            img {
+                height: 350px;
+            }
+        }
+    }
+}
 
 .search-overlay {
     display: none;

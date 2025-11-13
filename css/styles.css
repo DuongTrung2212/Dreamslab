@@ -48,28 +48,30 @@
   transform: translate3d(0, -8px, 0);
   opacity: 1;
 }
-#header .menu-list .menu-item .home-sub-menu {
+
+.home-sub-menu {
   position: fixed;
   width: 100vw;
   left: 0;
   right: 0;
   top: 122px;
   overflow-y: auto;
+  background-color: var(--primary);
 }
-#header .menu-list .menu-item .home-sub-menu .sub-menu-list {
+.home-sub-menu .sub-menu-list {
   padding: 30px 60px 0 60px;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-#header .menu-list .menu-item .home-sub-menu .sub-menu-list .sub-item {
+.home-sub-menu .sub-menu-list .sub-item {
   border: 1px solid var(--out-line-2);
   border-radius: 8px;
   padding: 24px;
   font-size: 16px;
   font-weight: 500;
 }
-#header .menu-list .menu-item .home-sub-menu .sub-menu-list .sub-item img {
+.home-sub-menu .sub-menu-list .sub-item img {
   height: 350px;
 }
 
