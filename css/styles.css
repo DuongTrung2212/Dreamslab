@@ -1,6 +1,7 @@
 :root {
   --primary: #030303;
   --primary-2: #c2c2c2;
+  --primary-3: #cdcdcd;
   --white: #ffffff;
   --gray: #444444;
   --gray-2: #7c7c7c;
@@ -136,6 +137,39 @@
 .btn-hover-center span {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform: translateX(0);
+}
+
+.hero-section {
+  padding: 264px 0 66px;
+  background-image: url("../../image/hero/blog-colum-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 3.91vw;
+  border-radius: 8px;
+  perspective: 2px;
+}
+.hero-section .hero-title {
+  max-width: 660px;
+}
+.hero-section .hero-section-top {
+  transform: translateY(50%);
+}
+.hero-section .hero-section-top .address-hero-section {
+  position: relative;
+  padding-right: 40px;
+  border-right: 1px solid rgba(248, 248, 248, 0.2);
+}
+.hero-section .hero-section-top .address-hero-section::after {
+  content: "+";
+  position: absolute;
+  color: var(--white);
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%) !important;
+}
+.hero-section .hero-section-top .phone-hero-section {
+  padding-left: 40px;
 }
 
 #footer .footer-logo {
@@ -624,7 +658,15 @@ h6 {
 }
 
 .max-w-325 {
-  max-width: 325;
+  max-width: 325px;
+}
+
+.max-w-470 {
+  max-width: 470px;
+}
+
+.max-w-1100 {
+  max-width: 1100px;
 }
 
 .w-max-content {
@@ -639,12 +681,24 @@ h6 {
   height: 100%;
 }
 
+.h-556 {
+  height: 556px;
+}
+
 .max-h-400 {
   max-height: 400px;
 }
 
 .m-auto {
   margin: auto;
+}
+
+.mt-135 {
+  margin-top: 135px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }
 
 .p-15 {
@@ -669,9 +723,19 @@ h6 {
   padding-right: 26px;
 }
 
+.px-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .px-75 {
   padding-left: 75px;
   padding-right: 75px;
+}
+
+.px-80 {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .px-85 {
@@ -684,13 +748,27 @@ h6 {
   padding-bottom: 9px;
 }
 
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .py-35 {
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .text-14 {
   font-size: 14px;
+}
+
+.text-15 {
+  font-size: 15px;
 }
 
 .text-16 {
@@ -709,8 +787,16 @@ h6 {
   font-size: 22px;
 }
 
+.text-25 {
+  font-size: 25px;
+}
+
 .text-primary-2 {
   color: var(--primary-2);
+}
+
+.text-primary-3 {
+  color: var(--primary-3);
 }
 
 .font-satoshi {
@@ -729,16 +815,35 @@ h6 {
   background-color: rgba(248, 248, 248, 0.1019607843);
 }
 
-.ab-center-vertical {
+.bg-img {
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.-ab-center-vertical {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.ab-center-horizontal {
+.-ab-center-horizontal {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.ab-center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.ab-center-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(50%);
 }
 
 .ab-center {
@@ -753,12 +858,20 @@ h6 {
   top: 100%;
 }
 
+.top-haft {
+  top: 50%;
+}
+
 .top-122 {
   top: 122px;
 }
 
 .bottom {
   bottom: 100%;
+}
+
+.right-0 {
+  right: 0;
 }
 
 .right-32 {
@@ -769,13 +882,19 @@ h6 {
   right: 100%;
 }
 
+.left-0 {
+  left: 0;
+}
+
+.left-haft {
+  left: 50%;
+}
+
 .left-full {
   left: 100%;
 }
 
-.circle-50 {
-  width: 50px;
-  height: 50px;
+.circle, .circle-100, .circle-50, .circle-40 {
   border-radius: 50%;
   flex: 0 0 auto;
   display: flex;
@@ -783,8 +902,23 @@ h6 {
   align-items: center;
 }
 
+.circle-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.circle-50 {
+  width: 50px;
+  height: 50px;
+}
+
+.circle-100 {
+  width: 100px;
+  height: 100px;
+}
+
 .border-style-2 {
-  border: 1px solid var(--out-line-2);
+  border: 1px solid var(--out-line-2) !important;
 }
 
 .border-b {
@@ -801,6 +935,10 @@ h6 {
 
 .border-r {
   border-right: 1px solid var(--out-line-2);
+}
+
+.border-color-primary-2 {
+  border-color: var(--primary-2);
 }
 
 .radius-full {
@@ -897,6 +1035,10 @@ h6 {
 
 .text-hover-white:hover {
   color: var(--white);
+}
+
+.bg-hover-white:hover {
+  background-color: var(--white);
 }
 
 /*# sourceMappingURL=styles.css.map */

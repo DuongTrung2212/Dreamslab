@@ -1,0 +1,32 @@
+.hero-section {
+    padding: 264px 0 66px;
+    background-image: url("../../image/hero/blog-colum-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 3.91vw;
+    border-radius: 8px;
+    perspective: 2px;
+    .hero-title {
+        max-width: 660px;
+    }
+    .hero-section-top {
+        transform: translateY(50%);
+        .address-hero-section {
+            position: relative;
+            padding-right: 40px;
+            border-right: 1px solid #f8f8f833;
+            &::after {
+                content: "+";
+                position: absolute;
+                color: var(--white);
+                right: 0;
+                top: 50%;
+                transform: translate(50%, -50%) !important;
+            }
+        }
+        .phone-hero-section {
+            padding-left: 40px;
+        }
+    }
+}

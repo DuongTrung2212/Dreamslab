@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="fonts/fonts.css" />
+        <link rel="stylesheet" href="fonts/fonts-icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <!-- Favicon and Touch Icons  -->
+        <link rel="shortcut icon" href="images/logo/favicon.png" />
+        <link
+            rel="apple-touch-icon-precomposed"
+            href="images/logo/favicon.png"
+        />
+    </head>
+    <body>
+        <div id="wrapper" class="position-relative">
+            <div
+                class="search-overlay w-100 position-absolute flex-column top-0 max-h-400"
+            >
+                <div
+                    class="w-1770 d-flex justify-content-between align-items-center"
+                >
+                    <img src="image/logo/logo.png" alt="logo" class="logo" />
+                    <span class="close-overlay-btn">X</span>
+                </div>
+                <div class="tf-container border-b p">
+                    <form>
+                        <input
+                            class="border border-0 rounded-0 bg-transparent"
+                            type="text"
+                            placeholder="Type your search words"
+                        />
+                    </form>
+                </div>
+            </div>
+            <!-- header -->
+            <header
+                id="header"
+                class="header-default w-1770 position-relative m-auto h-122 d-flex border-b justify-content-between align-items-center gap-25"
+            >
+                <div
+                    class="d-flex justify-content-between align-items-center h-100"
+                >
+                    <div class="p-r-85 border-r h-100 center">
+                        <img
+                            src="image/logo/logo.png"
+                            alt="logo"
+                            class="logo"
+                        />
+                    </div>
+                    <div class="d-flex h-100 font-clash-display">
+                        <div class="px-85 center parent-menu">
+                            <img src="./image/menu/menu.png" />
+                            <span class="icon-close text-white"></span>
+                        </div>
+                        <ul class="d-flex text-14 menu-list">
+                            <li class="menu-item">
+                                <div
+                                    class="d-flex gap-1 h-100 center parent-menu"
+                                >
+                                    <span>//</span>
+                                    <a class="menu-text" href="#">HOME</a>
+                                    <div
+                                        class="sub-menu home-sub-menu text-white h-100"
+                                    >
+                                        <div class="d-grid sub-menu-list w-100">
+                                            <div
+                                                class="g-col-3 p-10 border-style-2 sub-item"
+                                            >
+                                                <div
+                                                    class="d-flex flex-column align-items-center"
+                                                >
+                                                    <img src="" />
+                                                    <a href="#" class=""
+                                                        >HOME 1</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="d-flex gap-1 center">
+                                    <span>//</span>
+                                    <a class="menu-text" href="#"
+                                        >ABOUT STUDIO</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div
+                                    class="dropdown d-flex gap-1 w-fit center h-100"
+                                >
+                                    <span>//</span>
+                                    <a class="menu-text" href="#">PAGES</a>
+                                    <ul
+                                        class="dropdown-menu min-w-325 pages-sub-menu d-flex flex-column justify-content-start w-max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                    >
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                OUR SERVICE
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                SINGLE SERVICE
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26"
+                                                >CAREERS</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26"
+                                                >FAQS</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                MEET THE TEAM
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                TEAM DETAIL
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                WORKING PROCESS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                TESTIMONIALS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <a href="#" class="py-9 px-26"
+                                                    >SHOP</a
+                                                >
+                                                <ul
+                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                >
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            PRODUCT DETAILS
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            WISHLIST
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            CART
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            CHECKOUT
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            MY ACCOUNT
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="d-flex gap-1 dropdown h-100 center">
+                                    <span>//</span>
+                                    <a class="menu-text" href="#">PORTFOLIO</a>
+                                    <ul
+                                        class="dropdown-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                    >
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                INTERACTIVE SHOWCASE
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                GRID MASONRY
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26"
+                                                >FULL WIDTH</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26"
+                                                >CLASSIC</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26"
+                                                >CAROUSEL</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                INTERACTIVE LINKS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                DRID FULL WIDTH
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown">
+                                                <p class="py-9 px-26">
+                                                    PORTFOLIO SINGLE
+                                                </p>
+                                                <ul
+                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                >
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            STANDAR DETAIL
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            SLIDER GALLERY
+                                                            DETAIL
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            LEFT GALLERY DETAIL
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            COLUM GALLERY DETAIL
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="d-flex gap-1 dropdown h-100 center">
+                                    <span>//</span>
+                                    <a class="menu-text" href="#">BLOG</a>
+                                    <ul
+                                        class="dropdown-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                    >
+                                        <li>
+                                            <div class="d-flex gap-1 dropdown">
+                                                <p class="py-9 px-26">
+                                                    BLOG STANDARD
+                                                </p>
+                                                <ul
+                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                >
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            LEFT SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            RIGHT SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            WITHOUR SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                BLOG NO SIDEBAR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="py-9 px-26">
+                                                BLOG COLUMS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex gap-1 dropdown">
+                                                <p class="py-9 px-26">
+                                                    BLOG SINGLE
+                                                </p>
+                                                <ul
+                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                >
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            LEFT SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="py-9 px-26"
+                                                        >
+                                                            RIGHT SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            a
+                                                            class="py-9 px-26"
+                                                        >
+                                                            WITHOUR SIDEBAR
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="d-flex gap-1">
+                                    <span>//</span>
+                                    <a class="menu-text" href="#">CONTACT US</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-row gap-25">
+                    <div
+                        class="border-style-2 p-15 circle-50 center w-fit search-btn"
+                    >
+                        <span class="icon-search icon"></span>
+                    </div>
+
+                    <div class="position-relative">
+                        <a href="#">
+                            <button class="btn-style-1 w-260 btn-hover-center">
+                                <span> GET IN TOUCH </span>
+                                <span class="icon-right-arrow"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- /header -->
+
+            <!-- hero section -->
+            <section
+                class="hero-section w-1770 position-relative px-70 text-16"
+            >
+                <div
+                    class="hero-section-top d-flex justify-content-between position-absolute w-full px-70 top-0 left-0"
+                >
+                    <div class="d-flex align-items-center">
+                        <div
+                            class="d-flex flex-column address-hero-section gap-3"
+                        >
+                            <span>Based In Los Angeles, California</span>
+                            <span>Dreamslab112@gmail.com</span>
+                        </div>
+                        <span class="phone-hero-section">
+                            Call Us — (234) 109-6666</span
+                        >
+                    </div>
+                    <div class="position-relative w-fit footer-btn text-14">
+                        <a href="#">
+                            <button
+                                class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
+                            >
+                                <span> let’s work together </span>
+                                <span
+                                    class="icon-right-arrow text-black"
+                                ></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="hero-section-bot w-full d-flex justify-content-between"
+                >
+                    <span>Our Blog</span>
+                    <h5
+                        class="hero-title text-uppercase font-clash-display fw-semibold"
+                    >
+                        Inspiring creativity, one story at a time
+                    </h5>
+                </div>
+            </section>
+            <!-- /hero-section -->
+
+            <!-- newletter-section -->
+            <section class="tf-container">
+                <div
+                    class="row d-flex py-60 px-80 mt-135 mb-50 align-items-center justify-content-between border-style-2 rounded"
+                >
+                    <div class="center col-6 gap-5">
+                        <span
+                            class="icon-document circle-100 border-style-2 bg-hover-white"
+                        ></span>
+                        <div
+                            class="font-clash-display d-flex flex-column gap-4"
+                        >
+                            <span class="text-25 text-uppercase fw-semibold"
+                                >Subscribe to Newsletter</span
+                            >
+                            <p class="text-primary-2 text-16">
+                                Please sign up to follow the latest news and
+                                events from us, we promise not to spam your
+                                inbox.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 position-relative">
+                        <input
+                            class="w-full border-style-2"
+                            type="text"
+                            src="Email Address"
+                        />
+                        <span
+                            class="icon-send bg-danger-subtle btn-style-1 -ab-center-vertical circle-50 right-0"
+                        ></span>
+                    </div>
+                </div>
+            </section>
+            <!-- /newletter-section -->
+            <section class="tf-container h-556 p-0">
+                <div class="swiper mySwiper w-full h-full">
+                    <div class="swiper-wrapper w-full h-full">
+                        <div
+                            class="swiper-slide position-relative w-full h-full h-556 bg-img"
+                            style="
+                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog2.webp');
+                            "
+                        >
+                            <div
+                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                            >
+                                <div
+                                    class="d-flex w-full justify-content-between py-16 border-b border-color-primary-2"
+                                >
+                                    <div class="center gap-3">
+                                        <span
+                                            class="icon-document circle-40 border-style-2 bg-hover-white"
+                                        ></span>
+                                        <span class="text-15">02 Jun 25</span>
+                                    </div>
+                                    <div class="d-flex gap-5">
+                                        <div class="center gap-3">
+                                            <span
+                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                            ></span>
+                                            <span class="text-15"
+                                                >By admin</span
+                                            >
+                                        </div>
+                                        <div class="center gap-3">
+                                            <span
+                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                            ></span>
+                                            <div>
+                                                <span class="text-15"
+                                                    >Storytelling</span
+                                                >,
+                                                <span class="text-15"
+                                                    >Website</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="center gap-3">
+                                            <span
+                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                            ></span>
+                                            <span class="text-15"
+                                                >No Comments</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span
+                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                        >Mastering Content Marketing: Strategies
+                                        for Creative Agencies</span
+                                    >
+                                    <p class="text-primary-3">
+                                        For creative agencies, content marketing
+                                        is more than a buzzword — it’s a growth
+                                        engine. This session uncovers proven
+                                        strategies to build thought leadership,
+                                        attract ideal clients, and strengthen
+                                        your…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full h-full">Slide 2</div>
+                        <div class="swiper-slide w-full h-full">Slide 3</div>
+                        <div class="swiper-slide w-full h-full">Slide 4</div>
+                        <div class="swiper-slide w-full h-full">Slide 5</div>
+                        <div class="swiper-slide w-full h-full">Slide 6</div>
+                        <div class="swiper-slide w-full h-full">Slide 7</div>
+                        <div class="swiper-slide w-full h-full">Slide 8</div>
+                        <div class="swiper-slide w-full h-full">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer id="footer" class="d-flex flex-column w-full">
+                <div class="w-100 border-t border-b">
+                    <div class="w-1770 row">
+                        <div class="col-4 p-100 px-75 border-r border-l">
+                            <a href="#">
+                                <img
+                                    src="image/logo/logo.png"
+                                    alt="logo"
+                                    class="footer-logo"
+                                />
+                            </a>
+                            <div class="d-flex flex-column gap-30">
+                                <span class="cooperate text-18"
+                                    >How to cooperate?</span
+                                >
+                                <div
+                                    class="d-flex flex-column text-uppercase text-22 fw-medium gap-18"
+                                >
+                                    <span
+                                        >BASED IN LOS ANGELES, CALIFORNIA</span
+                                    >
+                                    <span>(234)109-6666</span>
+                                    <span>dreamslab112@gmail.com</span>
+                                </div>
+                                <div
+                                    class="position-relative w-fit footer-btn text-14"
+                                >
+                                    <a href="#">
+                                        <button
+                                            class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
+                                        >
+                                            <span> let’s work together </span>
+                                            <span
+                                                class="icon-right-arrow text-black"
+                                            ></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-100 px-75 border-r border-l">
+                            <div class="title text-20">
+                                <span
+                                    class="fw-semibold text-uppercase font-clash-display"
+                                    >QUICK LINKS</span
+                                >
+                            </div>
+                            <ul class="d-flex flex-column gap-30">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >An S4 Capital Company</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Sustainability</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Privacy Notice</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Candidates Privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Information Security & Compliance</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Ethical Marketing Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Morden Slavery Statement</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-primary-2 text-hover-white"
+                                        >Speak Up Policy</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4 p-100 px-75 border-r border-l">
+                            <div class="title text-20">
+                                <span
+                                    class="fw-semibold text-uppercase font-clash-display"
+                                >
+                                    subscribe latest news</span
+                                >
+                            </div>
+                            <div class="text-18 text-inner">
+                                <span> Don’t miss the latest news </span>
+                            </div>
+                            <div class="d-flex gap-4 text-decs">
+                                <div class="circle-50 bg-gray-btn center">
+                                    <span class="icon-bell"></span>
+                                </div>
+                                <p class="text-primary-2">
+                                    Join our newsletter to stay informed about
+                                    new tips, tutorials, projects, products,
+                                    Investments!
+                                </p>
+                            </div>
+                            <div
+                                class="d-flex font-clash-display gap-30 social-tag fw-medium"
+                            >
+                                <div>
+                                    <span class="icon-bell circle-50"></span
+                                    ><span>FACEBOOK</span>
+                                </div>
+                                <div>
+                                    <span class="icon-bell circle-50"></span
+                                    ><span>TELEGRAMS</span>
+                                </div>
+                                <div>
+                                    <span class="icon-bell circle-50"></span
+                                    ><span>PINTEREST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-1770 px-75 d-flex justify-content-between py-35 text-primary-2"
+                >
+                    <span
+                        >Copyright © 2025 Dreamslab by
+                        <a href="#" class="text-white">BravisThemes.</a> All
+                        Rights Reserved.</span
+                    >
+                    <div class="d-flex gap-30">
+                        <a href="#">Sitemap</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- /footer -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
