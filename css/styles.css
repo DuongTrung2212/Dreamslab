@@ -705,6 +705,10 @@ h6 {
   padding: 15px;
 }
 
+.p-20 {
+  padding: 20px;
+}
+
 .p-35 {
   padding: 35px;
 }
@@ -894,7 +898,7 @@ h6 {
   left: 100%;
 }
 
-.circle, .circle-100, .circle-50, .circle-40 {
+.circle, .circle-100, .circle-70, .circle-50, .circle-40 {
   border-radius: 50%;
   flex: 0 0 auto;
   display: flex;
@@ -910,6 +914,11 @@ h6 {
 .circle-50 {
   width: 50px;
   height: 50px;
+}
+
+.circle-70 {
+  width: 70px;
+  height: 70px;
 }
 
 .circle-100 {
@@ -937,8 +946,16 @@ h6 {
   border-right: 1px solid var(--out-line-2);
 }
 
-.border-color-primary-2 {
-  border-color: var(--primary-2);
+.border-haft {
+  border-right: 0.5px solid var(--out-line-2);
+}
+
+.border-style-3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.border-b-style-3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .radius-full {
@@ -987,6 +1004,30 @@ h6 {
   visibility: hidden;
   opacity: 0;
   transform: translateY(50%);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+.translate-y-full {
+  transform: translateY(100%);
+}
+
+.translate-x-x2 {
+  transform: translateX(200%);
+}
+
+.-translate-x-x2 {
+  transform: translateX(-200%);
+}
+
+.-translate-y-x2 {
+  transform: translateY(-200%);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
 }
 
 .dropdown {

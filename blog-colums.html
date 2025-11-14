@@ -493,8 +493,10 @@
                 </div>
             </section>
             <!-- /newletter-section -->
-            <section class="tf-container h-556 p-0">
-                <div class="swiper mySwiper w-full h-full">
+            <section class="tf-container h-556 p-0 position-relative">
+                <div
+                    class="swiper mySwiper w-full h-full position-relative rounded"
+                >
                     <div class="swiper-wrapper w-full h-full">
                         <div
                             class="swiper-slide position-relative w-full h-full h-556 bg-img"
@@ -506,18 +508,18 @@
                                 class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b border-color-primary-2"
+                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
                                 >
                                     <div class="center gap-3">
                                         <span
-                                            class="icon-document circle-40 border-style-2 bg-hover-white"
+                                            class="icon-document circle-40 bg-white"
                                         ></span>
                                         <span class="text-15">02 Jun 25</span>
                                     </div>
                                     <div class="d-flex gap-5">
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                                class="icon-document circle-40 bg-white"
                                             ></span>
                                             <span class="text-15"
                                                 >By admin</span
@@ -525,7 +527,7 @@
                                         </div>
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                                class="icon-document circle-40 bg-white"
                                             ></span>
                                             <div>
                                                 <span class="text-15"
@@ -538,7 +540,7 @@
                                         </div>
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-document circle-40 border-style-2 bg-hover-white"
+                                                class="icon-document circle-40 bg-white"
                                             ></span>
                                             <span class="text-15"
                                                 >No Comments</span
@@ -572,8 +574,58 @@
                         <div class="swiper-slide w-full h-full">Slide 8</div>
                         <div class="swiper-slide w-full h-full">Slide 9</div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </div>
+                <div
+                    class="swiper-btn-next position-absolute top-haft right-0 translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
+                >
+                    <span class="icon-right-arrow"></span>
+                </div>
+                <div
+                    class="swiper-btn-prev position-absolute top-haft left-0 -translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
+                >
+                    <span class="icon-right-arrow rotate-180"></span>
+                </div>
+            </section>
+
+            <section class="tf-container">
+                <div
+                    class="d-flex justify-content-between align-items-center py-60"
+                >
+                    <span>Showing 1-6 of 7 results</span>
+                    <div
+                        class="dropdown position-relative bg-white text-black p-20 rounded"
+                    >
+                        <div class="w-160 h-50">
+                            <span>Lastest posts</span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <span class="dropdown-item" type="button">
+                                    Lastest posts
+                                </span>
+                            </li>
+                            <li>
+                                <span class="dropdown-item" type="button">
+                                    Posts Author
+                                </span>
+                            </li>
+                            <li>
+                                <span class="dropdown-item" type="button">
+                                    Posts Title
+                                </span>
+                            </li>
+                            <li>
+                                <span class="dropdown-item" type="button">
+                                    Posts Random
+                                </span>
+                            </li>
+                            <li>
+                                <span class="dropdown-item" type="button">
+                                    Comment Count
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 

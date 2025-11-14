@@ -459,6 +459,10 @@ h6 {
     padding: 15px;
 }
 
+.p-20 {
+    padding: 20px;
+}
+
 .p-35 {
     padding: 35px;
 }
@@ -679,6 +683,12 @@ h6 {
     height: 50px;
 }
 
+.circle-70 {
+    @extend .circle;
+    width: 70px;
+    height: 70px;
+}
+
 .circle-100 {
     @extend .circle;
     width: 100px;
@@ -707,8 +717,16 @@ h6 {
     border-right: 1px solid var(--out-line-2);
 }
 
-.border-color-primary-2 {
-    border-color: var(--primary-2);
+.border-haft {
+    border-right: 0.5px solid var(--out-line-2);
+}
+
+.border-style-3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.border-b-style-3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 // radius
@@ -746,6 +764,31 @@ h6 {
     @include dropdown(".sub-menu-2");
 }
 
+// tranform
+
+.translate-x-full {
+    transform: translateX(100%);
+}
+
+.translate-y-full {
+    transform: translateY(100%);
+}
+
+.translate-x-x2 {
+    transform: translateX(200%);
+}
+
+.-translate-x-x2 {
+    transform: translateX(-200%);
+}
+
+.-translate-y-x2 {
+    transform: translateY(-200%);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
 // dropdown
 
 .dropdown {
