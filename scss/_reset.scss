@@ -154,6 +154,7 @@ li {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 // form //
@@ -409,6 +410,10 @@ h6 {
     width: initial;
 }
 
+.w-160 {
+    width: 160px;
+}
+
 .min-w-325 {
     min-width: 325px;
 }
@@ -454,6 +459,10 @@ h6 {
 .mb-50 {
     margin-bottom: 50px;
 }
+.mb-135 {
+    margin-bottom: 135px !important;
+}
+
 // padding
 .p-15 {
     padding: 15px;
@@ -479,6 +488,11 @@ h6 {
 .px-26 {
     padding-left: 26px;
     padding-right: 26px;
+}
+
+.px-60 {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
 }
 
 .px-70 {
@@ -517,8 +531,8 @@ h6 {
 }
 
 .py-60 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
 }
 // text
 .text-14 {
@@ -547,6 +561,10 @@ h6 {
 
 .text-25 {
     font-size: 25px;
+}
+
+.text-30 {
+    font-size: 30px;
 }
 
 // color
@@ -702,15 +720,15 @@ h6 {
 }
 
 .border-b {
-    border-bottom: 1px solid var(--out-line-2);
+    border-bottom: 1px solid var(--out-line-2) !important;
 }
 
 .border-t {
-    border-top: 1px solid var(--out-line-2);
+    border-top: 1px solid var(--out-line-2) !important;
 }
 
 .border-l {
-    border-left: 1px solid var(--out-line-2);
+    border-left: 1px solid var(--out-line-2) !important;
 }
 
 .border-r {
@@ -722,11 +740,15 @@ h6 {
 }
 
 .border-style-3 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .border-b-style-3 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.border-t-style-3 {
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 // radius
@@ -757,14 +779,18 @@ h6 {
 }
 
 .parent-menu {
-    @include dropdown(".sub-menu");
+    @include dropdown-hover(".sub-menu");
 }
 
 .parent-menu-2 {
-    @include dropdown(".sub-menu-2");
+    @include dropdown-hover(".sub-menu-2");
 }
 
 // tranform
+
+.translate-0 {
+    transform: translate(0, 0) !important;
+}
 
 .translate-x-full {
     transform: translateX(100%);
@@ -789,13 +815,13 @@ h6 {
 .rotate-180 {
     transform: rotate(180deg);
 }
-// dropdown
+// dropdown-hover
 
-.dropdown {
+.dropdown-hover {
     position: relative;
-    &:hover > .dropdown-menu,
-    &:focus-within > .dropdown-menu,
-    &.is-open > .dropdown-menu {
+    &:hover > .dropdown-hover-menu,
+    &:focus-within > .dropdown-hover-menu,
+    &.is-open > .dropdown-hover-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -803,7 +829,7 @@ h6 {
         pointer-events: auto;
     }
 }
-.dropdown-menu {
+.dropdown-hover-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -821,16 +847,16 @@ h6 {
     border-radius: 0;
 }
 
-.dropdown-menu .dropdown > .dropdown-menu {
+.dropdown-hover-menu .dropdown-hover > .dropdown-hover-menu {
     top: 0;
     left: 100%;
     transform: translateX(8px);
     transition: opacity 0.2s ease, transform 0.2s ease,
         visibility 0s linear 0.2s;
 }
-.dropdown-menu .dropdown:hover > .dropdown-menu,
-.dropdown-menu .dropdown:focus-within > .dropdown-menu,
-.dropdown-menu .dropdown.is-open > .dropdown-menu {
+.dropdown-hover-menu .dropdown-hover:hover > .dropdown-hover-menu,
+.dropdown-hover-menu .dropdown-hover:focus-within > .dropdown-hover-menu,
+.dropdown-hover-menu .dropdown-hover.is-open > .dropdown-hover-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
@@ -843,7 +869,24 @@ h6 {
 .text-hover-white:hover {
     color: var(--white);
 }
+.text-hover-black:hover {
+    color: var(--black-2);
+}
 
 .bg-hover-white:hover {
     background-color: var(--white);
+}
+
+.dropdown-center .dropdown-rounded-b-0-active[aria-expanded="true"] {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+// .dropdown-center .dropdown-border-b-active[aria-expanded="true"] {
+//     border-bottom: 1px solid red;
+// }
+
+.dropdown-center .dropdown-menu.show.dropdown-rounded-t-0-active {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
 }

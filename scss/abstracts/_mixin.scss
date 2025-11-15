@@ -23,7 +23,7 @@
     visibility: visible;
 }
 
-@mixin dropdown($submenu) {
+@mixin dropdown-hover($submenu) {
     &:hover #{$submenu} {
         opacity: 1;
         transform: translateY(0);

@@ -75,7 +75,7 @@
                                     <span>//</span>
                                     <a class="menu-text" href="#">HOME</a>
                                     <div
-                                        class="sub-menu home-sub-menu text-white h-100"
+                                        class="sub-menu z-3 home-sub-menu text-white h-100"
                                     >
                                         <div class="d-grid sub-menu-list w-100">
                                             <div
@@ -104,12 +104,12 @@
                             </li>
                             <li class="menu-item">
                                 <div
-                                    class="dropdown d-flex gap-1 w-fit center h-100"
+                                    class="dropdown-hover d-flex gap-1 w-fit center h-100"
                                 >
                                     <span>//</span>
                                     <a class="menu-text" href="#">PAGES</a>
                                     <ul
-                                        class="dropdown-menu min-w-325 pages-sub-menu d-flex flex-column justify-content-start w-max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                        class="dropdown-hover-menu min-w-325 pages-sub-menu d-flex flex-column justify-content-start w-max-content flex-nowrap -ab-center-vertical gap-2 top-full"
                                     >
                                         <li>
                                             <a href="#" class="py-9 px-26">
@@ -152,12 +152,12 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <div class="dropdown">
+                                            <div class="dropdown-hover">
                                                 <a href="#" class="py-9 px-26"
                                                     >SHOP</a
                                                 >
                                                 <ul
-                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                    class="dropdown-hover-menu min-w-325 position-absolute left-full d-flex flex-column"
                                                 >
                                                     <li>
                                                         <a
@@ -206,11 +206,13 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <div class="d-flex gap-1 dropdown h-100 center">
+                                <div
+                                    class="d-flex gap-1 dropdown-hover h-100 center"
+                                >
                                     <span>//</span>
                                     <a class="menu-text" href="#">PORTFOLIO</a>
                                     <ul
-                                        class="dropdown-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                        class="dropdown-hover-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
                                     >
                                         <li>
                                             <a href="#" class="py-9 px-26">
@@ -248,12 +250,12 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <div class="dropdown">
+                                            <div class="dropdown-hover">
                                                 <p class="py-9 px-26">
                                                     PORTFOLIO SINGLE
                                                 </p>
                                                 <ul
-                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                    class="dropdown-hover-menu min-w-325 position-absolute left-full d-flex flex-column"
                                                 >
                                                     <li>
                                                         <a
@@ -295,19 +297,23 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <div class="d-flex gap-1 dropdown h-100 center">
+                                <div
+                                    class="d-flex gap-1 dropdown-hover h-100 center"
+                                >
                                     <span>//</span>
                                     <a class="menu-text" href="#">BLOG</a>
                                     <ul
-                                        class="dropdown-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
+                                        class="dropdown-hover-menu min-w-325 top-122 pages-sub-menu d-flex flex-column justify-content-start max-content flex-nowrap -ab-center-vertical gap-2 top-full"
                                     >
                                         <li>
-                                            <div class="d-flex gap-1 dropdown">
+                                            <div
+                                                class="d-flex gap-1 dropdown-hover"
+                                            >
                                                 <p class="py-9 px-26">
                                                     BLOG STANDARD
                                                 </p>
                                                 <ul
-                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                    class="dropdown-hover-menu min-w-325 position-absolute left-full d-flex flex-column"
                                                 >
                                                     <li>
                                                         <a
@@ -347,12 +353,14 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <div class="d-flex gap-1 dropdown">
+                                            <div
+                                                class="d-flex gap-1 dropdown-hover"
+                                            >
                                                 <p class="py-9 px-26">
                                                     BLOG SINGLE
                                                 </p>
                                                 <ul
-                                                    class="dropdown-menu min-w-325 position-absolute left-full d-flex flex-column"
+                                                    class="dropdown-hover-menu min-w-325 position-absolute left-full d-flex flex-column"
                                                 >
                                                     <li>
                                                         <a
@@ -483,12 +491,14 @@
                     <div class="col-6 position-relative">
                         <input
                             class="w-full border-style-2"
-                            type="text"
-                            src="Email Address"
+                            type="email"
+                            placeholder="Email Address"
                         />
-                        <span
-                            class="icon-send bg-danger-subtle btn-style-1 -ab-center-vertical circle-50 right-0"
-                        ></span>
+                        <button
+                            class="bg-danger-subtle p-0 m-0 btn-style-1 -ab-center-vertical circle-50 right-0"
+                        >
+                            <span class="icon-send"></span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -589,44 +599,225 @@
 
             <section class="tf-container">
                 <div
-                    class="d-flex justify-content-between align-items-center py-60"
+                    class="d-flex justify-content-between position-relative align-items-center py-60"
                 >
                     <span>Showing 1-6 of 7 results</span>
-                    <div
-                        class="dropdown position-relative bg-white text-black p-20 rounded"
-                    >
-                        <div class="w-160 h-50">
-                            <span>Lastest posts</span>
-                        </div>
-                        <ul class="dropdown-menu">
+                    <div class="dropdown-center">
+                        <span
+                            class="btn btn-secondary dropdown-rounded-b-0-active dropdown-toggle bg-white text-black p-20 rounded border-0 w-160"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Lastest Posts
+                        </span>
+                        <ul
+                            class="dropdown-menu z-3 w-160 position-absolute translate-0 top-100 border-0 rounded dropdown-rounded-t-0-active border-t border-t-style-3"
+                        >
                             <li>
-                                <span class="dropdown-item" type="button">
+                                <span class="dropdown-item py-2" type="button">
                                     Lastest posts
                                 </span>
                             </li>
                             <li>
-                                <span class="dropdown-item" type="button">
+                                <span class="dropdown-item py-2" type="button">
                                     Posts Author
                                 </span>
                             </li>
                             <li>
-                                <span class="dropdown-item" type="button">
+                                <span class="dropdown-item py-2" type="button">
                                     Posts Title
                                 </span>
                             </li>
                             <li>
-                                <span class="dropdown-item" type="button">
+                                <span class="dropdown-item py-2" type="button">
                                     Posts Random
                                 </span>
                             </li>
                             <li>
-                                <span class="dropdown-item" type="button">
+                                <span class="dropdown-item py-2" type="button">
                                     Comment Count
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
+            </section>
+
+            <section class="tf-container">
+                <div class="row">
+                    <div class="col-4 px-15 mb-50">
+                        <div class="card-style-1 w-100 position-relative">
+                            <div class="img-inner rounded overflow-hidden">
+                                <img
+                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="card-post d-flex flex-column rounded bg-black font-clash-display"
+                                >
+                                    <div class="card-date">
+                                        <span class="card-day text-30 fw-medium"
+                                            >02</span
+                                        >
+                                        <span class="card-month fw-normal"
+                                            >Jun</span
+                                        >
+                                    </div>
+                                    <span class="card-expiration-date"
+                                        >/25</span
+                                    >
+                                </div>
+                                <div class="card-desc">
+                                    <p class="desc-text">
+                                        True creativity begins where the brief
+                                        ends. In this session, we explore how to
+                                        move beyond client expectations…
+                                    </p>
+                                    <span class="icon-right-up1"></span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <span class="user">BY ADMIN</span>
+                                <span class="role">CONTENT,WEBSITE</span>
+                            </div>
+                            <p class="title">
+                                Beyond the Brief: Unlocking Unexpected
+                                Creativity
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 px-15 mb-50">
+                        <div class="card-style-1 w-100 position-relative">
+                            <div class="img-inner rounded overflow-hidden">
+                                <img
+                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="card-post d-flex flex-column rounded bg-black font-clash-display"
+                                >
+                                    <div class="card-date">
+                                        <span class="card-day text-30 fw-medium"
+                                            >02</span
+                                        >
+                                        <span class="card-month fw-normal"
+                                            >Jun</span
+                                        >
+                                    </div>
+                                    <span class="card-expiration-date"
+                                        >/25</span
+                                    >
+                                </div>
+                                <div class="card-desc">
+                                    <p class="desc-text">
+                                        True creativity begins where the brief
+                                        ends. In this session, we explore how to
+                                        move beyond client expectations…
+                                    </p>
+                                    <span class="icon-right-up1"></span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <span class="user">BY ADMIN</span>
+                                <span class="role">CONTENT,WEBSITE</span>
+                            </div>
+                            <p class="title">
+                                Beyond the Brief: Unlocking Unexpected
+                                Creativity
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 px-15 mb-50">
+                        <div class="card-style-1 w-100 position-relative">
+                            <div class="img-inner rounded overflow-hidden">
+                                <img
+                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="card-post d-flex flex-column rounded bg-black font-clash-display"
+                                >
+                                    <div class="card-date">
+                                        <span class="card-day text-30 fw-medium"
+                                            >02</span
+                                        >
+                                        <span class="card-month fw-normal"
+                                            >Jun</span
+                                        >
+                                    </div>
+                                    <span class="card-expiration-date"
+                                        >/25</span
+                                    >
+                                </div>
+                                <div class="card-desc">
+                                    <p class="desc-text">
+                                        True creativity begins where the brief
+                                        ends. In this session, we explore how to
+                                        move beyond client expectations…
+                                    </p>
+                                    <span class="icon-right-up1"></span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <span class="user">BY ADMIN</span>
+                                <span class="role">CONTENT,WEBSITE</span>
+                            </div>
+                            <p class="title">
+                                Beyond the Brief: Unlocking Unexpected
+                                Creativity
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 px-15 mb-50">
+                        <div class="card-style-1 w-100 position-relative">
+                            <div class="img-inner rounded overflow-hidden">
+                                <img
+                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="card-post d-flex flex-column rounded bg-black font-clash-display"
+                                >
+                                    <div class="card-date">
+                                        <span class="card-day text-30 fw-medium"
+                                            >02</span
+                                        >
+                                        <span class="card-month fw-normal"
+                                            >Jun</span
+                                        >
+                                    </div>
+                                    <span class="card-expiration-date"
+                                        >/25</span
+                                    >
+                                </div>
+                                <div class="card-desc">
+                                    <p class="desc-text">
+                                        True creativity begins where the brief
+                                        ends. In this session, we explore how to
+                                        move beyond client expectations…
+                                    </p>
+                                    <span class="icon-right-up1"></span>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <span class="user">BY ADMIN</span>
+                                <span class="role">CONTENT,WEBSITE</span>
+                            </div>
+                            <p class="title">
+                                Beyond the Brief: Unlocking Unexpected
+                                Creativity
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="m-auto center mb-135">
+                    <button
+                        class="px-60 fw-bold bg-hover-white text-hover-black"
+                    >
+                        LOAD MORE
+                    </button>
+                </a>
             </section>
 
             <!-- footer -->
@@ -792,6 +983,8 @@
             </footer>
             <!-- /footer -->
         </div>
+        <script src="./js/bootstrap-select.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/jquery.min.js"></script>
         <script src="./js/main.js"></script>
