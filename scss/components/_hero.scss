@@ -16,17 +16,22 @@
             position: relative;
             padding-right: 40px;
             border-right: 1px solid #f8f8f833;
-            &::after {
-                content: "+";
-                position: absolute;
-                color: var(--white);
-                right: 0;
-                top: 50%;
-                transform: translate(50%, -50%) !important;
-            }
         }
         .phone-hero-section {
             padding-left: 40px;
         }
+    }
+}
+
+.plus-icon-after {
+    &::after {
+        content: "+";
+        position: absolute;
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 100;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%) !important;
     }
 }

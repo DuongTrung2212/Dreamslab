@@ -155,6 +155,7 @@ li {
     padding-left: 0;
     list-style: none;
     box-sizing: border-box;
+    list-style-position: inside;
 }
 
 // form //
@@ -371,29 +372,29 @@ h6 {
 
 h1 {
     font-size: 385px;
-    line-height: 90px;
+    line-height: 50px;
 }
 
 h2 {
     font-size: 200px;
-    line-height: 90px;
+    line-height: 50px;
 }
 
 h3 {
     font-size: 60px;
-    line-height: 90px;
+    line-height: 50px;
 }
 h4 {
     font-size: 50px;
-    line-height: 90px;
+    line-height: 50px;
 }
 h5 {
     font-size: 45px;
-    line-height: 90px;
+    line-height: 50px;
 }
 h6 {
     font-size: 35px;
-    line-height: 90px;
+    line-height: 50px;
 }
 
 // width
@@ -414,6 +415,10 @@ h6 {
     width: 160px;
 }
 
+.w-260 {
+    width: 260px;
+}
+
 .min-w-325 {
     min-width: 325px;
 }
@@ -432,6 +437,11 @@ h6 {
     width: max-content;
 }
 // height
+
+.h-fit {
+    height: fit-content !important;
+}
+
 .h-122 {
     height: 122px;
 }
@@ -476,8 +486,62 @@ h6 {
     padding: 35px;
 }
 
+.p-45 {
+    padding: 45px;
+}
+
 .p-100 {
     padding: 100px;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-135 {
+    padding-bottom: 135px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+.pr-40 {
+    padding-right: 40px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+.pl-40 {
+    padding-left: 40px;
 }
 
 .px-15 {
@@ -485,9 +549,29 @@ h6 {
     padding-right: 15px;
 }
 
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-25 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
 .px-26 {
     padding-left: 26px;
     padding-right: 26px;
+}
+
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.px-35 {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .px-60 {
@@ -520,14 +604,34 @@ h6 {
     padding-bottom: 9px;
 }
 
+.py-10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .py-16 {
     padding-top: 16px;
     padding-bottom: 16px;
 }
 
+.py-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .py-35 {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .py-60 {
@@ -559,6 +663,10 @@ h6 {
     font-size: 22px;
 }
 
+.text-23 {
+    font-size: 23px;
+}
+
 .text-25 {
     font-size: 25px;
 }
@@ -574,6 +682,10 @@ h6 {
 }
 .text-primary-3 {
     color: var(--primary-3);
+}
+
+.text-primary-4 {
+    color: var(--gray);
 }
 
 // font
@@ -601,6 +713,18 @@ h6 {
     background-repeat: no-repeat;
 }
 
+.bg-primary-2 {
+    background-color: var(--primary-2);
+}
+
+.bg-primary-4 {
+    background-color: var(--primary-4);
+}
+
+.bg-white-2 {
+    background-color: var(--white-2);
+}
+
 // position
 
 .-ab-center-vertical {
@@ -618,13 +742,13 @@ h6 {
 .ab-center-vertical {
     position: absolute;
     top: 50%;
-    transform: translateY(+50%);
+    transform: translateY(50%);
 }
 
 .ab-center-horizontal {
     position: absolute;
     left: 50%;
-    transform: translateX(+50%);
+    transform: translateX(50%);
 }
 
 .ab-center {
@@ -697,8 +821,14 @@ h6 {
 
 .circle-50 {
     @extend .circle;
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.circle-65 {
+    @extend .circle;
+    width: 65px;
+    height: 65px;
 }
 
 .circle-70 {
@@ -707,10 +837,22 @@ h6 {
     height: 70px;
 }
 
+.circle-90 {
+    @extend .circle;
+    width: 90px;
+    height: 90px;
+}
+
 .circle-100 {
     @extend .circle;
     width: 100px;
     height: 100px;
+}
+
+.circle-200 {
+    @extend .circle;
+    width: 200px;
+    height: 200px;
 }
 
 // border
@@ -719,19 +861,19 @@ h6 {
     border: 1px solid var(--out-line-2) !important;
 }
 
-.border-b {
+.border-b-style-2 {
     border-bottom: 1px solid var(--out-line-2) !important;
 }
 
-.border-t {
+.border-t-style-2 {
     border-top: 1px solid var(--out-line-2) !important;
 }
 
-.border-l {
+.border-l-style-2 {
     border-left: 1px solid var(--out-line-2) !important;
 }
 
-.border-r {
+.border-r-style-2 {
     border-right: 1px solid var(--out-line-2);
 }
 
@@ -751,6 +893,10 @@ h6 {
     border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
+.border-b-style-4 {
+    border-bottom: 1px solid #11111126;
+}
+
 // radius
 
 .radius-full {
@@ -767,8 +913,20 @@ h6 {
 
 // gap
 
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
 .gap-18 {
     gap: 18px;
+}
+
+.gap-20 {
+    gap: 20px;
 }
 
 .gap-25 {
@@ -776,6 +934,14 @@ h6 {
 }
 .gap-30 {
     gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-50 {
+    gap: 50px;
 }
 
 .parent-menu {
@@ -815,6 +981,62 @@ h6 {
 .rotate-180 {
     transform: rotate(180deg);
 }
+
+// animation
+
+.shake {
+    display: inline-block;
+    animation: shake 0.9s ease-in-out infinite;
+    transform-origin: 50% 0%;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: rotate(-15deg);
+    }
+    45% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// list-style
+.white-disc {
+    padding-left: 20px;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.white-disc li {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.white-disc li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+}
+
 // dropdown-hover
 
 .dropdown-hover {
@@ -873,6 +1095,10 @@ h6 {
     color: var(--black-2);
 }
 
+.text-hover-underline:hover {
+    text-decoration: underline;
+}
+
 .bg-hover-white:hover {
     background-color: var(--white);
 }
@@ -894,4 +1120,16 @@ h6 {
 .bg-filter-dark-3 {
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: darken;
+}
+
+.right-dot::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 100%;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
 }
