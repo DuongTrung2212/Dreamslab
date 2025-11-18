@@ -619,6 +619,11 @@ h6 {
     padding-bottom: 16px;
 }
 
+.py-20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
 .py-25 {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -783,6 +788,10 @@ h6 {
     right: 0;
 }
 
+.right-20 {
+    right: 20px;
+}
+
 .right-32 {
     right: 32px;
 }
@@ -811,6 +820,24 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.circle-20 {
+    @extend .circle;
+    width: 20px;
+    height: 20px;
+}
+
+.circle-25 {
+    @extend .circle;
+    width: 25px;
+    height: 25px;
+}
+
+.circle-30 {
+    @extend .circle;
+    width: 30px;
+    height: 30px;
 }
 
 .circle-40 {

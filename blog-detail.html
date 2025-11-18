@@ -400,14 +400,38 @@
                 </div>
                 <div class="d-flex flex-row gap-15">
                     <div
-                        class="border-style-2 p-15 circle-65 center w-fit search-btn"
+                        class="dropdown-hover position-relative border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
                     >
                         <span>EN</span>
+                        <ul
+                            class="dropdown-hover-menu w-160 position-absolute bg-white text-black translate-middle-x top-100 border-0 border-t border-t-style-3"
+                        >
+                            <li>
+                                <span
+                                    class="dropdown-item py-2 px-15"
+                                    type="button"
+                                >
+                                    EN
+                                </span>
+                            </li>
+                            <li>
+                                <span
+                                    class="dropdown-item py-2 px-15"
+                                    type="button"
+                                >
+                                    KR
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                     <div
-                        class="border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
+                        class="position-relative border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
                     >
                         <span class="icon-shopping-cart-simple"></span>
+                        <span
+                            class="position-absolute font-clash-display circle-25 text-14 bg-white text-black right-0 top-0 translate-middle-y"
+                            >0</span
+                        >
                     </div>
                     <div
                         class="border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
@@ -826,40 +850,86 @@
                             <ul>
                                 <li>
                                     <div
-                                        class="px-30 position-relative py-25 text-18 fw-medium bg-white text-black font-clash-display text-uppercase left-arrow-animation"
+                                        class="px-30 position-relative py-25 text-18 fw-medium bg-white text-black font-clash-display text-uppercase"
                                     >
-                                        <span class="icon-arrow-right2"></span>
                                         <span> Categories </span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25 border-b-style-2">
-                                        <span class="icon-arrow-right2"></span>
-                                        <span> Branding </span>
-                                    </div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text"> Branding </span>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25 border-b-style-2">
-                                        Content
-                                    </div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text"> Content </span>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25 border-b-style-2">
-                                        Design
-                                    </div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text"> Design </span>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25 border-b-style-2">
-                                        Marketing
-                                    </div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text">
+                                                Marketing
+                                            </span>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25 border-b-style-2">
-                                        Storytelling
-                                    </div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text">
+                                                Storytelling
+                                            </span>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>
-                                    <div class="px-30 py-25">Website</div>
+                                    <a class="w-full" href="#">
+                                        <div
+                                            class="d-flex align-items-center gap-2 px-30 py-25 border-b-style-2 left-moving-animation"
+                                        >
+                                            <span
+                                                class="icon-arrow-right2 icon"
+                                            ></span>
+                                            <span class="text"> Website </span>
+                                        </div>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -872,76 +942,91 @@
                             <div class="px-35">
                                 <ul>
                                     <li>
-                                        <div
-                                            class="d-flex py-35 border-b-style-2"
-                                        >
-                                            <img
-                                                class="rounded"
-                                                alt=""
-                                                src="https://placehold.co/76x82"
-                                            />
+                                        <a href="#">
                                             <div
-                                                class="px-20 d-flex flex-column justify-content-between"
+                                                class="d-flex py-35 border-b-style-2"
                                             >
-                                                <p
-                                                    class="text-14 text-primary-2"
+                                                <img
+                                                    class="rounded"
+                                                    alt=""
+                                                    src="https://placehold.co/76x82"
+                                                />
+                                                <div
+                                                    class="px-20 d-flex flex-column justify-content-between"
                                                 >
-                                                    02 / 06 / 25
-                                                </p>
-                                                <p class="font-clash-display">
-                                                    Beyond the Brief: Unlocking
-                                                    Unexpected Creativity
-                                                </p>
+                                                    <p
+                                                        class="text-14 text-primary-2"
+                                                    >
+                                                        02 / 06 / 25
+                                                    </p>
+                                                    <p
+                                                        class="font-clash-display"
+                                                    >
+                                                        Beyond the Brief:
+                                                        Unlocking Unexpected
+                                                        Creativity
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </li>
                                     <li>
-                                        <div
-                                            class="d-flex py-35 border-b-style-2"
-                                        >
-                                            <img
-                                                class="rounded"
-                                                alt=""
-                                                src="https://placehold.co/76x82"
-                                            />
+                                        <a href="#">
                                             <div
-                                                class="px-20 d-flex flex-column justify-content-between"
+                                                class="d-flex py-35 border-b-style-2"
                                             >
-                                                <p
-                                                    class="text-14 text-primary-2"
+                                                <img
+                                                    class="rounded"
+                                                    alt=""
+                                                    src="https://placehold.co/76x82"
+                                                />
+                                                <div
+                                                    class="px-20 d-flex flex-column justify-content-between"
                                                 >
-                                                    02 / 06 / 25
-                                                </p>
-                                                <p class="font-clash-display">
-                                                    Beyond the Brief: Unlocking
-                                                    Unexpected Creativity
-                                                </p>
+                                                    <p
+                                                        class="text-14 text-primary-2"
+                                                    >
+                                                        02 / 06 / 25
+                                                    </p>
+                                                    <p
+                                                        class="font-clash-display"
+                                                    >
+                                                        Beyond the Brief:
+                                                        Unlocking Unexpected
+                                                        Creativity
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </li>
                                     <li>
-                                        <div
-                                            class="d-flex py-35 border-b-style-2"
-                                        >
-                                            <img
-                                                class="rounded"
-                                                alt=""
-                                                src="https://placehold.co/76x82"
-                                            />
+                                        <a href="#">
                                             <div
-                                                class="px-20 d-flex flex-column justify-content-between"
+                                                class="d-flex py-35 border-b-style-2"
                                             >
-                                                <p
-                                                    class="text-14 text-primary-2"
+                                                <img
+                                                    class="rounded"
+                                                    alt=""
+                                                    src="https://placehold.co/76x82"
+                                                />
+                                                <div
+                                                    class="px-20 d-flex flex-column justify-content-between"
                                                 >
-                                                    02 / 06 / 25
-                                                </p>
-                                                <p class="font-clash-display">
-                                                    Beyond the Brief: Unlocking
-                                                    Unexpected Creativity
-                                                </p>
+                                                    <p
+                                                        class="text-14 text-primary-2"
+                                                    >
+                                                        02 / 06 / 25
+                                                    </p>
+                                                    <p
+                                                        class="font-clash-display"
+                                                    >
+                                                        Beyond the Brief:
+                                                        Unlocking Unexpected
+                                                        Creativity
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -952,96 +1037,149 @@
                             >
                                 Tags
                             </div>
-                            <div class="p-35 d-flex gap-2 flex-wrap">
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                            <ul class="p-35 d-flex gap-2 flex-wrap">
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Analysis
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Analysis
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Business
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Business
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Consulting
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Consulting
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Corporate
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Corporate
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Data
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Data
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Marketing
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Marketing
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Solutions
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Solutions
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Statistics
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Statistics
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Stocks
-                                    </p>
-                                    <span>/</span>
-                                </a>
-                                <a class="d-flex gap-2 text-primary-2" href="#">
-                                    <p
-                                        class="text-hover-white text-hover-underline"
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Stocks
+                                        </p>
+                                        <span>/</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="d-flex gap-2 text-primary-2"
+                                        href="#"
                                     >
-                                        Trading
-                                    </p>
-                                </a>
-                            </div>
+                                        <p
+                                            class="text-hover-white text-hover-underline"
+                                        >
+                                            Trading
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- footer -->
-            <footer id="footer" class="d-flex flex-column w-full">
+            <footer
+                id="footer"
+                class="d-flex flex-column w-full border-t-style-2"
+            >
                 <div class="w-100 border-t border-b-style-2">
                     <div class="w-1770 row">
-                        <div class="col-4 p-100 px-75 border-r border-l">
+                        <div class="col-4 p-100 px-75 border-l-style-2">
                             <a href="#">
                                 <img
                                     src="image/logo/logo.png"
@@ -1078,7 +1216,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 p-100 px-75 border-r border-l">
+                        <div
+                            class="col-4 p-100 px-75 border-r-style-2 border-l-style-2"
+                        >
                             <div class="title text-20">
                                 <span
                                     class="fw-semibold text-uppercase font-clash-display"
@@ -1144,7 +1284,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-4 p-100 px-75 border-r border-l">
+                        <div class="col-4 p-100 px-75 border-r-style-2">
                             <div class="title text-20">
                                 <span
                                     class="fw-semibold text-uppercase font-clash-display"
@@ -1152,8 +1292,20 @@
                                     subscribe latest news</span
                                 >
                             </div>
-                            <div class="text-18 text-inner">
+                            <div class="text-18 text-inner py-25">
                                 <span> Don’t miss the latest news </span>
+                            </div>
+                            <div
+                                class="position-relative d-flex justify-content-between align-items-between"
+                            >
+                                <input
+                                    class="border-b-style-2 bg-white text-primary-2-placeholder text-black"
+                                    type="email"
+                                    placeholder="Email Address..."
+                                />
+                                <span
+                                    class="icon-send text-black position-absolute right-20 top-haft translate-middle"
+                                ></span>
                             </div>
                             <div class="d-flex gap-4 text-decs">
                                 <div class="circle-50 bg-gray-btn center">

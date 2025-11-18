@@ -1,8 +1,19 @@
-.left-arrow-animation {
-    &::after {
-        content: "";
-        background-image: url("../image/icons/arrow-right.svg");
-        color: white;
-        position: absolute;
+.left-moving-animation {
+    .icon {
+        width: 0;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 220ms linear;
     }
+}
+.left-moving-animation:hover {
+    .icon {
+        transform: translateX(0);
+        width: 16px;
+        opacity: 1;
+    }
+}
+
+.text-primary-2-placeholder::placeholder {
+    color: var(--black) !important;
 }
