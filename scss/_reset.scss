@@ -137,6 +137,7 @@ img {
     transform: scale(1);
     vertical-align: middle;
     -ms-interpolation-mode: bicubic;
+    object-fit: cover;
 }
 
 .row {
@@ -463,6 +464,10 @@ h6 {
     margin: auto;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
 .mt-135 {
     margin-top: 135px;
 }
@@ -474,6 +479,7 @@ h6 {
 }
 
 // padding
+
 .p-15 {
     padding: 15px;
 }
@@ -488,6 +494,10 @@ h6 {
 
 .p-45 {
     padding: 45px;
+}
+
+.p-65 {
+    padding: 65px;
 }
 
 .p-100 {
@@ -579,6 +589,11 @@ h6 {
     padding-right: 60px !important;
 }
 
+.px-65 {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
 .px-70 {
     padding-left: 70px;
     padding-right: 70px;
@@ -629,6 +644,11 @@ h6 {
     padding-bottom: 25px;
 }
 
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .py-35 {
     padding-top: 35px !important;
     padding-bottom: 35px !important;
@@ -637,6 +657,11 @@ h6 {
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .py-60 {
@@ -1153,16 +1178,4 @@ h6 {
 .bg-filter-dark-3 {
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: darken;
-}
-
-.right-dot::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    border-radius: 100%;
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
 }

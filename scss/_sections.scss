@@ -17,3 +17,27 @@
 .text-primary-2-placeholder::placeholder {
     color: var(--black) !important;
 }
+
+.right-dot::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 100%;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.left-dot::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
