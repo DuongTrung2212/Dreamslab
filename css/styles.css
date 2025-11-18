@@ -1439,4 +1439,11 @@ h6 {
   transform: translate(50%, -50%);
 }
 
+.left-arrow-animation::after {
+  content: "";
+  background-image: url("../image/icons/arrow-right.svg");
+  color: white;
+  position: absolute;
+}
+
 /*# sourceMappingURL=styles.css.map */
