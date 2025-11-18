@@ -84,3 +84,24 @@
         display: none;
     }
 }
+.cart-hover-style-1 {
+    .card-desc {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    img {
+        transition: all 0.5s ease;
+    }
+}
+.cart-hover-style-1:hover {
+    .card-desc {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+    img {
+        transform: scale(1.07, 1.07) translateX(-10px);
+    }
+}

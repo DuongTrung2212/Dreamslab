@@ -221,6 +221,25 @@
   display: none;
 }
 
+.cart-hover-style-1 .card-desc {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.cart-hover-style-1 img {
+  transition: all 0.5s ease;
+}
+
+.cart-hover-style-1:hover .card-desc {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+}
+.cart-hover-style-1:hover img {
+  transform: scale(1.07, 1.07) translateX(-10px);
+}
+
 .hero-section {
   padding: 264px 0 66px;
   background-image: url("../../image/hero/blog-colum-hero-bg.jpg");
@@ -1133,7 +1152,7 @@ h6 {
   left: 100%;
 }
 
-.circle, .circle-200, .circle-100, .circle-90, .circle-70, .circle-65, .circle-50, .circle-40, .circle-30, .circle-25, .circle-20 {
+.circle, .circle-200, .circle-100, .circle-90, .circle-75, .circle-70, .circle-65, .circle-50, .circle-40, .circle-30, .circle-25, .circle-20 {
   border-radius: 50%;
   flex: 0 0 auto;
   display: flex;
@@ -1174,6 +1193,11 @@ h6 {
 .circle-70 {
   width: 70px;
   height: 70px;
+}
+
+.circle-75 {
+  width: 75px;
+  height: 75px;
 }
 
 .circle-90 {

@@ -864,6 +864,12 @@ h6 {
     height: 70px;
 }
 
+.circle-75 {
+    @extend .circle;
+    width: 75px;
+    height: 75px;
+}
+
 .circle-90 {
     @extend .circle;
     width: 90px;
