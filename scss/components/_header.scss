@@ -1,12 +1,5 @@
 #header {
     position: relative;
-    .p-r-85 {
-        padding-right: 85px;
-    }
-    .p-l-85 {
-        padding-left: 85px;
-    }
-
     .menu-list {
         display: flex;
         color: var(--primary-2);
@@ -56,7 +49,7 @@
     width: 100vw;
     left: 0;
     right: 0;
-    top: 122px;
+    top: 121.5px;
     overflow-y: auto;
     background-color: var(--primary);
 

@@ -16,12 +16,6 @@
 #header {
   position: relative;
 }
-#header .p-r-85 {
-  padding-right: 85px;
-}
-#header .p-l-85 {
-  padding-left: 85px;
-}
 #header .menu-list {
   display: flex;
   color: var(--primary-2);
@@ -62,7 +56,7 @@
   width: 100vw;
   left: 0;
   right: 0;
-  top: 122px;
+  top: 121.5px;
   overflow-y: auto;
   background-color: var(--primary);
 }
@@ -866,6 +860,10 @@ h6 {
   margin: auto;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -950,12 +948,20 @@ h6 {
   padding-right: 40px;
 }
 
+.pr-85 {
+  padding-right: 85px;
+}
+
 .pl-20 {
   padding-left: 20px;
 }
 
 .pl-40 {
   padding-left: 40px;
+}
+
+.pl-85 {
+  padding-left: 85px;
 }
 
 .px-15 {
