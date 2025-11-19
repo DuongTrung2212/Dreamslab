@@ -1465,7 +1465,11 @@ h6 {
 }
 
 .rotate-180 {
-  transform: rotate(180deg);
+  transform: rotate(180deg) !important;
+}
+
+.rotate-90 {
+  transform: rotate(90deg) !important;
 }
 
 .shake {
