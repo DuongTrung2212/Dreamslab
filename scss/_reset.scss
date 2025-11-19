@@ -963,6 +963,10 @@ h6 {
     border-bottom: 1px solid #11111126;
 }
 
+.border-style-5 {
+    border: 0.5px solid var(--white-2) !important;
+}
+
 // radius
 
 .radius-full {
@@ -1008,6 +1012,10 @@ h6 {
 
 .gap-50 {
     gap: 50px;
+}
+
+.gap-80 {
+    gap: 80px;
 }
 
 .parent-menu {
