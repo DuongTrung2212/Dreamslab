@@ -321,8 +321,8 @@ a {
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
-    width: 1320px;
-    max-width: 100%;
+    max-width: 1320px;
+    width: 100%;
 }
 
 .w-1850 {
@@ -333,6 +333,7 @@ a {
 
 .w-1770 {
     @extend .tf-container;
+
     width: 100%;
     max-width: 1800px;
 }

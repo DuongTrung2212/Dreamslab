@@ -356,6 +356,16 @@
   margin-bottom: 140px;
 }
 
+@media (max-width: 1440px) {
+  .swiper-btn-prev {
+    left: 0;
+    transform: translateX(0%) !important;
+  }
+  .swiper-btn-next {
+    right: 0;
+    transform: translateX(0%) !important;
+  }
+}
 html,
 body,
 div,
@@ -738,8 +748,8 @@ a:focus, a:hover {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  width: 1320px;
-  max-width: 100%;
+  max-width: 1320px;
+  width: 100%;
 }
 
 .w-1850 {
