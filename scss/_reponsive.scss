@@ -12,6 +12,13 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 1024px) {
+    .menu-list,
+    .header-right {
+        display: none !important;
+    }
+    .nav-mobile-btn {
+        display: block !important;
+    }
 }
 @media (max-width: 991px) {
 }

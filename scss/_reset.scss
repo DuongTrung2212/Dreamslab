@@ -581,8 +581,8 @@ h6 {
 }
 
 .px-26 {
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 26px !important;
+    padding-right: 26px !important;
 }
 
 .px-30 {
@@ -626,8 +626,8 @@ h6 {
 }
 
 .py-9 {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
 }
 
 .py-10 {
@@ -752,6 +752,10 @@ h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
 }
 
 .bg-primary-2 {
@@ -1119,6 +1123,12 @@ h6 {
 }
 
 // dropdown-hover
+
+// after
+
+.after-none::after {
+    display: none !important;
+}
 
 .dropdown-hover {
     position: relative;
