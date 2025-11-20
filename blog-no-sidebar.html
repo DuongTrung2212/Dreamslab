@@ -27,7 +27,7 @@
         />
     </head>
     <body>
-        <div id="wrapper" class="position-relative">
+        <div id="wrapper" class="position-relative blog-no-sidebar">
             <div
                 class="search-overlay w-100 position-absolute flex-column top-0 max-h-400"
             >
@@ -490,7 +490,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="d-flex flex-row gap-15">
+                <div class="header-right d-flex flex-row gap-15">
                     <div
                         class="dropdown-hover position-relative border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
                     >
@@ -531,60 +531,572 @@
                         <span class="icon-search"></span>
                     </div>
                 </div>
+                <div
+                    class="nav-mobile-btn"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                >
+                    <span class="icon-menu"></span>
+                </div>
+                <!-- offcanvas -->
+                <div
+                    class="offcanvas offcanvas-start bg-primary"
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                    c
+                >
+                    <div class="offcanvas-header">
+                        <div class="pr-85 border-r h-100 center">
+                            <img
+                                src="image/logo/logo.png"
+                                alt="logo"
+                                class="logo"
+                            />
+                        </div>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        >
+                            <span class="icon-cross text-white"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body bg-transparent">
+                        <div class="position-relative">
+                            <input
+                                class="border-b-style-2 bg-white text-primary-2-placeholder text-black"
+                                type="text"
+                                placeholder="Search..."
+                            />
+                            <span
+                                class="icon-search position-absolute right-0 top-haft translate-middle"
+                            ></span>
+                        </div>
+                        <!-- accordion -->
+                        <div
+                            class="accordion text-uppercase"
+                            id="accordionExample"
+                        >
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo"
+                                    >
+                                        HOME
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div
+                                        class="accordion-body h-556 overflow-y-auto"
+                                    >
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 1
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 2
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 3
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button after-none collapsed bg-transparent text-white py-0"
+                                    >
+                                        ABOUT STUDIO
+                                    </p>
+                                </h2>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsePage"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapsePage"
+                                    >
+                                        PAGES
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapsePage"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body overflow-y-auto">
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    OUR SERVICE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    SINGLE SERVICE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >CAREERS</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >FAQS</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    MEET THE TEAM
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    TEAM DETAIL
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    WORKING PROCESS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    TESTIMONIALS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="accordion-item bg-transparent text-white border-0"
+                                                >
+                                                    <h2
+                                                        class="accordion-header"
+                                                    >
+                                                        <p
+                                                            class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseShop"
+                                                            aria-expanded="false"
+                                                            aria-controls="flush-collapseShop"
+                                                        >
+                                                            SHOP
+                                                        </p>
+                                                    </h2>
+                                                    <div
+                                                        id="flush-collapseShop"
+                                                        class="accordion-collapse collapse"
+                                                    >
+                                                        <div
+                                                            class="accordion-body overflow-y-auto"
+                                                        >
+                                                            <ul
+                                                                class="d-flex flex-column"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="py-9 px-26"
+                                                                    >
+                                                                        OUR
+                                                                        SERVICE
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="py-9 px-26"
+                                                                    >
+                                                                        SINGLE
+                                                                        SERVICE
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsePortfolio"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapsePortfolio"
+                                    >
+                                        PORTFOLIO
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapsePortfolio"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body overflow-y-auto">
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Interactive Showcase
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Grid Masonry
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Full Width</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Classic</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Carousel
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Interactive Links
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Grid Full Width
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapsePortfolioSingle"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapsePortfolioSingle"
+                                                    >
+                                                        Portfolio Single
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapsePortfolioSingle"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    OUR SERVICE
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    SINGLE
+                                                                    SERVICE
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseBlog"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseBlog"
+                                    >
+                                        BLog
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapseBlog"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div
+                                        class="accordion-body h-556 overflow-y-auto"
+                                    >
+                                        <ul class="d-flex flex-column">
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0 px-2"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseBlogStandar"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseBlogStandar"
+                                                    >
+                                                        Blog Standar
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseBlogStandar"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Right
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Without
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Blog No SideBar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Blog Colums</a
+                                                >
+                                            </li>
+
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseBlogSingle"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseBlogSingle"
+                                                    >
+                                                        Blog Single
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseBlogSingle"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Right
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Without
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
             <!-- /header -->
 
             <!-- hero section -->
-            <section
-                class="hero-section w-1770 position-relative px-70 text-16"
-            >
-                <div
-                    class="hero-section-top d-flex justify-content-between position-absolute w-full px-70 top-0 left-0"
-                >
-                    <div class="d-flex align-items-center">
-                        <div
-                            class="d-flex flex-column address-hero-section plus-icon-after gap-3"
-                        >
-                            <span>Based In Los Angeles, California</span>
-                            <span>Dreamslab112@gmail.com</span>
-                        </div>
-                        <span class="phone-hero-section">
-                            Call Us — (234) 109-6666</span
-                        >
-                    </div>
-                    <div class="position-relative w-fit footer-btn text-14">
-                        <a href="#">
-                            <button
-                                class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
-                            >
-                                <span> let’s work together </span>
-                                <span
-                                    class="icon-right-arrow text-black"
-                                ></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="hero-section-bot w-full d-flex justify-content-between"
-                >
-                    <span>Our Blog</span>
-                    <h5
-                        class="hero-title text-uppercase font-clash-display fw-semibold"
+            <section class="w-1770">
+                <div class="hero-section position-relative px-70 text-16">
+                    <div
+                        class="hero-section-top d-flex justify-content-between position-absolute w-full px-70 top-0 left-0"
                     >
-                        Inspiring creativity, one story at a time
-                    </h5>
+                        <div class="d-flex align-items-center">
+                            <div
+                                class="d-flex flex-column address-hero-section plus-icon-after gap-3"
+                            >
+                                <span>Based In Los Angeles, California</span>
+                                <span>Dreamslab112@gmail.com</span>
+                            </div>
+                            <span class="phone-hero-section">
+                                Call Us — (234) 109-6666</span
+                            >
+                        </div>
+                        <div class="position-relative w-fit footer-btn text-14">
+                            <a href="#">
+                                <button
+                                    class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
+                                >
+                                    <span> let’s work together </span>
+                                    <span
+                                        class="icon-right-arrow text-black"
+                                    ></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hero-section-bot w-full d-flex justify-content-between flex-wrap"
+                    >
+                        <span>Our Blog</span>
+                        <h5
+                            class="hero-title text-uppercase font-clash-display fw-semibold"
+                        >
+                            Inspiring creativity, one story at a time
+                        </h5>
+                    </div>
                 </div>
             </section>
-            <!-- /hero-section -->
 
             <!-- newletter-section -->
             <section class="tf-container">
                 <div
-                    class="row d-flex py-60 px-80 mt-135 mb-50 align-items-center justify-content-between border-style-2 rounded"
+                    class="row mx-0 newletter-section d-flex py-60 px-80 mt-135 mb-50 align-items-center justify-content-between border-style-2 rounded"
                 >
-                    <div class="center col-6 gap-5">
+                    <div class="newletter-left center col-xxl-6 col-lg-6 gap-5">
                         <span
                             class="icon-document circle-100 border-style-2 bg-hover-white text-hover-black text-30"
                         ></span>
@@ -601,7 +1113,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6 position-relative">
+                    <div
+                        class="newletter-right col-xxl-6 col-lg-6 position-relative"
+                    >
                         <input
                             class="w-full border-style-2"
                             type="email"
@@ -615,375 +1129,392 @@
                     </div>
                 </div>
             </section>
-            <!-- /newletter-section -->
+
             <!-- Swipper -->
-            <section class="tf-container h-556 p-0 position-relative">
-                <div
-                    class="swiper mySwiper w-full h-full position-relative rounded"
-                >
-                    <div class="swiper-wrapper w-full h-full">
-                        <div
-                            class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
-                            style="
-                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog2.webp');
-                            "
-                        >
+            <section class="tf-container">
+                <div class="h-556 p-0 position-relative swipper-section">
+                    <div
+                        class="swiper mySwiper w-full h-full position-relative rounded"
+                    >
+                        <div class="swiper-wrapper w-full h-full">
                             <div
-                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                                class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
+                                style="
+                                    --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog2.webp');
+                                "
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
+                                    class="swiper-content w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft p-3"
                                 >
-                                    <div class="center gap-3">
-                                        <span
-                                            class="icon-calendar_today circle-40 bg-white text-black"
-                                        ></span>
-                                        <span class="text-15">02 Jun 25</span>
-                                    </div>
-                                    <div class="d-flex gap-5">
-                                        <div class="center gap-3">
-                                            <img
-                                                class="circle-40"
-                                                alt=""
-                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
-                                            />
-                                            <span class="text-15"
-                                                >By admin</span
-                                            >
-                                        </div>
+                                    <div
+                                        class="d-flex w-full justify-content-between py-16 border-b-style-3 flex-wrap gap-4"
+                                    >
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-price-tag circle-40 text-black bg-white"
+                                                class="icon-calendar_today circle-40 bg-white text-black"
                                             ></span>
-                                            <div>
+                                            <span class="text-15">
+                                                02 Jun 25
+                                            </span>
+                                        </div>
+                                        <div class="d-flex gap-5 tag-list">
+                                            <div class="center gap-3">
+                                                <img
+                                                    class="circle-40"
+                                                    alt=""
+                                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                                />
                                                 <span class="text-15"
-                                                    >Storytelling</span
-                                                >,
+                                                    >By admin</span
+                                                >
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-price-tag circle-40 text-black bg-white"
+                                                ></span>
+                                                <div>
+                                                    <span class="text-15"
+                                                        >Storytelling</span
+                                                    >,
+                                                    <span class="text-15"
+                                                        >Website</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-bubble circle-40 text-black bg-white"
+                                                ></span>
                                                 <span class="text-15"
-                                                    >Website</span
+                                                    >No Comments</span
                                                 >
                                             </div>
                                         </div>
-                                        <div class="center gap-3">
-                                            <span
-                                                class="icon-bubble circle-40 text-black bg-white"
-                                            ></span>
-                                            <span class="text-15"
-                                                >No Comments</span
-                                            >
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span
-                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
-                                        >Mastering Content Marketing: Strategies
-                                        for Creative Agencies</span
-                                    >
-                                    <p class="text-primary-3">
-                                        For creative agencies, content marketing
-                                        is more than a buzzword — it’s a growth
-                                        engine. This session uncovers proven
-                                        strategies to build thought leadership,
-                                        attract ideal clients, and strengthen
-                                        your…
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <span
+                                            class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                            >Mastering Content Marketing:
+                                            Strategies for Creative
+                                            Agencies</span
+                                        >
+                                        <p class="text-primary-3">
+                                            For creative agencies, content
+                                            marketing is more than a buzzword —
+                                            it’s a growth engine. This session
+                                            uncovers proven strategies to build
+                                            thought leadership, attract ideal
+                                            clients, and strengthen your…
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
-                            style="
-                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog4.webp');
-                            "
-                        >
                             <div
-                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                                class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
+                                style="
+                                    --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog4.webp');
+                                "
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
+                                    class="swiper-content w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft p-3"
                                 >
-                                    <div class="center gap-3">
-                                        <span
-                                            class="icon-calendar_today circle-40 bg-white text-black"
-                                        ></span>
-                                        <span class="text-15">02 Jun 25</span>
-                                    </div>
-                                    <div class="d-flex gap-5">
-                                        <div class="center gap-3">
-                                            <img
-                                                class="circle-40"
-                                                alt=""
-                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
-                                            />
-                                            <span class="text-15"
-                                                >By admin</span
-                                            >
-                                        </div>
+                                    <div
+                                        class="d-flex w-full justify-content-between py-16 border-b-style-3 flex-wrap gap-4"
+                                    >
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-price-tag circle-40 text-black bg-white"
+                                                class="icon-calendar_today circle-40 bg-white text-black"
                                             ></span>
-                                            <div>
+                                            <span class="text-15">
+                                                02 Jun 25
+                                            </span>
+                                        </div>
+                                        <div class="d-flex gap-5 tag-list">
+                                            <div class="center gap-3">
+                                                <img
+                                                    class="circle-40"
+                                                    alt=""
+                                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                                />
                                                 <span class="text-15"
-                                                    >Storytelling</span
-                                                >,
+                                                    >By admin</span
+                                                >
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-price-tag circle-40 text-black bg-white"
+                                                ></span>
+                                                <div>
+                                                    <span class="text-15"
+                                                        >Storytelling</span
+                                                    >,
+                                                    <span class="text-15"
+                                                        >Website</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-bubble circle-40 text-black bg-white"
+                                                ></span>
                                                 <span class="text-15"
-                                                    >Website</span
+                                                    >No Comments</span
                                                 >
                                             </div>
                                         </div>
-                                        <div class="center gap-3">
-                                            <span
-                                                class="icon-bubble circle-40 bg-white text-black"
-                                            ></span>
-                                            <span class="text-15"
-                                                >No Comments</span
-                                            >
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span
-                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
-                                        >Mastering Content Marketing: Strategies
-                                        for Creative Agencies</span
-                                    >
-                                    <p class="text-primary-3">
-                                        For creative agencies, content marketing
-                                        is more than a buzzword — it’s a growth
-                                        engine. This session uncovers proven
-                                        strategies to build thought leadership,
-                                        attract ideal clients, and strengthen
-                                        your…
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <span
+                                            class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                            >Mastering Content Marketing:
+                                            Strategies for Creative
+                                            Agencies</span
+                                        >
+                                        <p class="text-primary-3">
+                                            For creative agencies, content
+                                            marketing is more than a buzzword —
+                                            it’s a growth engine. This session
+                                            uncovers proven strategies to build
+                                            thought leadership, attract ideal
+                                            clients, and strengthen your…
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
-                            style="
-                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog1.webp');
-                            "
-                        >
                             <div
-                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                                class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
+                                style="
+                                    --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog1.webp');
+                                "
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
+                                    class="swiper-content w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft p-3"
                                 >
-                                    <div class="center gap-3">
-                                        <span
-                                            class="icon-calendar_today circle-40 bg-white text-black"
-                                        ></span>
-                                        <span class="text-15">02 Jun 25</span>
-                                    </div>
-                                    <div class="d-flex gap-5">
-                                        <div class="center gap-3">
-                                            <img
-                                                class="circle-40"
-                                                alt=""
-                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog1.webp"
-                                            />
-                                            <span class="text-15"
-                                                >By admin</span
-                                            >
-                                        </div>
+                                    <div
+                                        class="d-flex w-full justify-content-between py-16 border-b-style-3 flex-wrap gap-4"
+                                    >
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-price-tag circle-40 text-black bg-white"
+                                                class="icon-calendar_today circle-40 bg-white text-black"
                                             ></span>
-                                            <div>
+                                            <span class="text-15">
+                                                02 Jun 25
+                                            </span>
+                                        </div>
+                                        <div class="d-flex gap-5 tag-list">
+                                            <div class="center gap-3">
+                                                <img
+                                                    class="circle-40"
+                                                    alt=""
+                                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                                />
                                                 <span class="text-15"
-                                                    >Storytelling</span
-                                                >,
+                                                    >By admin</span
+                                                >
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-price-tag circle-40 text-black bg-white"
+                                                ></span>
+                                                <div>
+                                                    <span class="text-15"
+                                                        >Storytelling</span
+                                                    >,
+                                                    <span class="text-15"
+                                                        >Website</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-bubble circle-40 text-black bg-white"
+                                                ></span>
                                                 <span class="text-15"
-                                                    >Website</span
+                                                    >No Comments</span
                                                 >
                                             </div>
                                         </div>
-                                        <div class="center gap-3">
-                                            <span
-                                                class="icon-bubble circle-40 bg-white text-black"
-                                            ></span>
-                                            <span class="text-15"
-                                                >No Comments</span
-                                            >
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span
-                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
-                                        >Mastering Content Marketing: Strategies
-                                        for Creative Agencies</span
-                                    >
-                                    <p class="text-primary-3">
-                                        For creative agencies, content marketing
-                                        is more than a buzzword — it’s a growth
-                                        engine. This session uncovers proven
-                                        strategies to build thought leadership,
-                                        attract ideal clients, and strengthen
-                                        your…
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <span
+                                            class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                            >Mastering Content Marketing:
+                                            Strategies for Creative
+                                            Agencies</span
+                                        >
+                                        <p class="text-primary-3">
+                                            For creative agencies, content
+                                            marketing is more than a buzzword —
+                                            it’s a growth engine. This session
+                                            uncovers proven strategies to build
+                                            thought leadership, attract ideal
+                                            clients, and strengthen your…
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
-                            style="
-                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog7-1.webp');
-                            "
-                        >
                             <div
-                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                                class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
+                                style="
+                                    --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog7-1.webp');
+                                "
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
+                                    class="swiper-content w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft p-3"
                                 >
-                                    <div class="center gap-3">
-                                        <span
-                                            class="icon-calendar_today circle-40 bg-white text-black"
-                                        ></span>
-                                        <span class="text-15">02 Jun 25</span>
-                                    </div>
-                                    <div class="d-flex gap-5">
-                                        <div class="center gap-3">
-                                            <img
-                                                class="circle-40"
-                                                alt=""
-                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog1.webp"
-                                            />
-                                            <span class="text-15"
-                                                >By admin</span
-                                            >
-                                        </div>
+                                    <div
+                                        class="d-flex w-full justify-content-between py-16 border-b-style-3 flex-wrap gap-4"
+                                    >
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-price-tag circle-40 text-black bg-white"
+                                                class="icon-calendar_today circle-40 bg-white text-black"
                                             ></span>
-                                            <div>
+                                            <span class="text-15">
+                                                02 Jun 25
+                                            </span>
+                                        </div>
+                                        <div class="d-flex gap-5 tag-list">
+                                            <div class="center gap-3">
+                                                <img
+                                                    class="circle-40"
+                                                    alt=""
+                                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                                />
                                                 <span class="text-15"
-                                                    >Storytelling</span
-                                                >,
+                                                    >By admin</span
+                                                >
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-price-tag circle-40 text-black bg-white"
+                                                ></span>
+                                                <div>
+                                                    <span class="text-15"
+                                                        >Storytelling</span
+                                                    >,
+                                                    <span class="text-15"
+                                                        >Website</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-bubble circle-40 text-black bg-white"
+                                                ></span>
                                                 <span class="text-15"
-                                                    >Website</span
+                                                    >No Comments</span
                                                 >
                                             </div>
                                         </div>
-                                        <div class="center gap-3">
-                                            <span
-                                                class="icon-bubble circle-40 bg-white text-black"
-                                            ></span>
-                                            <span class="text-15"
-                                                >No Comments</span
-                                            >
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span
-                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
-                                        >Mastering Content Marketing: Strategies
-                                        for Creative Agencies</span
-                                    >
-                                    <p class="text-primary-3">
-                                        For creative agencies, content marketing
-                                        is more than a buzzword — it’s a growth
-                                        engine. This session uncovers proven
-                                        strategies to build thought leadership,
-                                        attract ideal clients, and strengthen
-                                        your…
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <span
+                                            class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                            >Mastering Content Marketing:
+                                            Strategies for Creative
+                                            Agencies</span
+                                        >
+                                        <p class="text-primary-3">
+                                            For creative agencies, content
+                                            marketing is more than a buzzword —
+                                            it’s a growth engine. This session
+                                            uncovers proven strategies to build
+                                            thought leadership, attract ideal
+                                            clients, and strengthen your…
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
-                            style="
-                                --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/05/blog.webp');
-                            "
-                        >
                             <div
-                                class="w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft"
+                                class="swiper-slide position-relative w-full h-full h-556 bg-img bg-filter-dark-3"
+                                style="
+                                    --bg-img: url('https://dreamslab.bravisthemes.com/wp-content/uploads/2025/05/blog.webp');
+                                "
                             >
                                 <div
-                                    class="d-flex w-full justify-content-between py-16 border-b-style-3"
+                                    class="swiper-content w-full max-w-1100 position-absolute left-haft -ab-center-horizontal d-flex flex-column justify-content-between top-haft p-3"
                                 >
-                                    <div class="center gap-3">
-                                        <span
-                                            class="icon-calendar_today circle-40 bg-white text-black"
-                                        ></span>
-                                        <span class="text-15">02 Jun 25</span>
-                                    </div>
-                                    <div class="d-flex gap-5">
-                                        <div class="center gap-3">
-                                            <img
-                                                class="circle-40"
-                                                alt=""
-                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog1.webp"
-                                            />
-                                            <span class="text-15"
-                                                >By admin</span
-                                            >
-                                        </div>
+                                    <div
+                                        class="d-flex w-full justify-content-between py-16 border-b-style-3 flex-wrap gap-4"
+                                    >
                                         <div class="center gap-3">
                                             <span
-                                                class="icon-price-tag circle-40 text-black bg-white"
+                                                class="icon-calendar_today circle-40 bg-white text-black"
                                             ></span>
-                                            <div>
+                                            <span class="text-15">
+                                                02 Jun 25
+                                            </span>
+                                        </div>
+                                        <div class="d-flex gap-5 tag-list">
+                                            <div class="center gap-3">
+                                                <img
+                                                    class="circle-40"
+                                                    alt=""
+                                                    src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
+                                                />
                                                 <span class="text-15"
-                                                    >Storytelling</span
-                                                >,
+                                                    >By admin</span
+                                                >
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-price-tag circle-40 text-black bg-white"
+                                                ></span>
+                                                <div>
+                                                    <span class="text-15"
+                                                        >Storytelling</span
+                                                    >,
+                                                    <span class="text-15"
+                                                        >Website</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="center gap-3">
+                                                <span
+                                                    class="icon-bubble circle-40 text-black bg-white"
+                                                ></span>
                                                 <span class="text-15"
-                                                    >Website</span
+                                                    >No Comments</span
                                                 >
                                             </div>
                                         </div>
-                                        <div class="center gap-3">
-                                            <span
-                                                class="icon-bubble circle-40 bg-white text-black"
-                                            ></span>
-                                            <span class="text-15"
-                                                >No Comments</span
-                                            >
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span
-                                        class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
-                                        >Mastering Content Marketing: Strategies
-                                        for Creative Agencies</span
-                                    >
-                                    <p class="text-primary-3">
-                                        For creative agencies, content marketing
-                                        is more than a buzzword — it’s a growth
-                                        engine. This session uncovers proven
-                                        strategies to build thought leadership,
-                                        attract ideal clients, and strengthen
-                                        your…
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <span
+                                            class="text-25 font-clash-display py-35 fw-semibold text-uppercase"
+                                            >Mastering Content Marketing:
+                                            Strategies for Creative
+                                            Agencies</span
+                                        >
+                                        <p class="text-primary-3">
+                                            For creative agencies, content
+                                            marketing is more than a buzzword —
+                                            it’s a growth engine. This session
+                                            uncovers proven strategies to build
+                                            thought leadership, attract ideal
+                                            clients, and strengthen your…
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="swiper-btn-next position-absolute top-haft right-0 translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
-                >
-                    <span class="icon-right-arrow"></span>
-                </div>
-                <div
-                    class="swiper-btn-prev position-absolute top-haft left-0 -translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
-                >
-                    <span class="icon-right-arrow rotate-180"></span>
+                    <div
+                        class="swiper-btn-next position-absolute top-haft right-0 translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
+                    >
+                        <span class="icon-right-arrow"></span>
+                    </div>
+                    <div
+                        class="swiper-btn-prev position-absolute top-haft left-0 -translate-x-x2 bg-transparent bg-hover-white circle-70 border-style-2 z-3"
+                    >
+                        <span class="icon-right-arrow rotate-180"></span>
+                    </div>
                 </div>
             </section>
 
             <section class="tf-container">
                 <div
-                    class="d-flex justify-content-between position-relative align-items-center py-60"
+                    class="d-flex justify-content-between flex-wrap gap-1 position-relative align-items-center py-60"
                 >
                     <span>Showing 1-6 of 7 results</span>
                     <div class="dropdown-center">
@@ -1037,7 +1568,6 @@
                             class="img-inner position-relative rounded overflow-hidden"
                         >
                             <img
-                                width="767"
                                 height="643"
                                 src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/06/blog6-776x950.webp"
                                 alt=""
@@ -1058,7 +1588,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="author">
+                            <div class="author flex-wrap">
                                 <span class="user">BY ADMIN</span>
                                 <span class="role">CONTENT,WEBSITE</span>
                                 <span class="comment">0 COMMENT</span>
@@ -1117,7 +1647,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="author">
+                            <div class="author flex-wrap">
                                 <span class="user">BY ADMIN</span>
                                 <span class="role">CONTENT,WEBSITE</span>
                                 <span class="comment">0 COMMENT</span>
@@ -1149,12 +1679,13 @@
                         </div>
                     </div>
                     <div
-                        class="w-full d-flex flex-column rounded px-75 py-50 border-style-2"
+                        class="w-full testimonial d-flex flex-column rounded px-75 py-50 border-style-2"
                     >
                         <div
                             class="py-30 d-flex gap-40 border-b-style-2 align-items-center"
                         >
-                            <span class="circle-65 bg-white text-black"
+                            <span
+                                class="circle-65 testimonial-icon bg-white text-black"
                                 >//</span
                             >
                             <div class="d-flex flex-column gap-25">
@@ -1211,7 +1742,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="author">
+                            <div class="author flex-wrap">
                                 <span class="user">BY ADMIN</span>
                                 <span class="role">CONTENT,WEBSITE</span>
                                 <span class="comment">0 COMMENT</span>
@@ -1230,12 +1761,7 @@
                                     embrace ambiguity, challenge assumptions,…
                                 </p>
                             </div>
-                            <div
-                                class="position-relative d-flex justify-content-between align-items-center mt-50"
-                            >
-                                <div class="circle-70 border-style-2">
-                                    <span class="icon-play-button"></span>
-                                </div>
+                            <div class="position-relative align-self-end mt-50">
                                 <a href="./blog-detail.html">
                                     <button
                                         class="btn-style-1 w-260 bg-transparent text-white btn-hover-center text-black"
@@ -1248,13 +1774,13 @@
                         </div>
                     </div>
                     <div
-                        class="w-full d-flex flex-column rounded px-75 py-50 border-style-2"
+                        class="w-full testimonial d-flex flex-column rounded px-75 py-50 border-style-2"
                     >
                         <div
                             class="py-30 d-flex gap-40 border-b-style-2 align-items-center"
                         >
-                            <span class="circle-65 bg-white"
-                                ><span class="icon-link text-black"></span
+                            <span
+                                class="icon-link circle-65 bg-white text-black testimonial-icon"
                             ></span>
                             <div class="d-flex flex-column gap-25">
                                 <div
@@ -1308,7 +1834,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="author">
+                            <div class="author flex-wrap">
                                 <span class="user">BY ADMIN</span>
                                 <span class="role">CONTENT,WEBSITE</span>
                                 <span class="comment">0 COMMENT</span>
@@ -1327,12 +1853,7 @@
                                     embrace ambiguity, challenge assumptions,…
                                 </p>
                             </div>
-                            <div
-                                class="position-relative d-flex justify-content-between align-items-center mt-50"
-                            >
-                                <div class="circle-70 border-style-2">
-                                    <span class="icon-play-button"></span>
-                                </div>
+                            <div class="position-relative align-self-end mt-50">
                                 <a href="./blog-detail.html">
                                     <button
                                         class="btn-style-1 w-260 bg-transparent text-white btn-hover-center text-black"
@@ -1366,9 +1887,11 @@
                 id="footer"
                 class="d-flex flex-column w-full border-t-style-2"
             >
-                <div class="w-100 border-t border-b-style-2">
+                <div class="w-100 footer-top border-t border-b-style-2">
                     <div class="w-1770 row">
-                        <div class="col-4 p-100 px-75 border-l-style-2">
+                        <div
+                            class="footer-left col-xxl-4 col-xl-6 col-lg-6 p-100 px-75 border-l-style-2"
+                        >
                             <a href="#">
                                 <img
                                     src="image/logo/logo.png"
@@ -1394,7 +1917,7 @@
                                 >
                                     <a href="#">
                                         <button
-                                            class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
+                                            class="btn-style-1 max-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
                                         >
                                             <span> let’s work together </span>
                                             <span
@@ -1406,7 +1929,7 @@
                             </div>
                         </div>
                         <div
-                            class="col-4 p-100 px-75 border-r-style-2 border-l-style-2"
+                            class="footer-inner col-xxl-4 col-xl-6 col-lg-6 p-100 px-75 border-r-style-2 border-l-style-2"
                         >
                             <div class="title text-20">
                                 <span
@@ -1473,7 +1996,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-4 p-100 px-75 border-r-style-2">
+                        <div
+                            class="footer-right col-xxl-4 col-xl-12 col-lg-12 p-100 px-75 border-r-style-2"
+                        >
                             <div class="title text-20">
                                 <span
                                     class="fw-semibold text-uppercase font-clash-display"
@@ -1496,7 +2021,9 @@
                                     class="icon-send text-black position-absolute right-20 top-haft translate-middle"
                                 ></span>
                             </div>
-                            <div class="d-flex gap-4 text-decs">
+                            <div
+                                class="d-flex gap-4 text-decs align-items-center"
+                            >
                                 <div class="circle-50 bg-gray-btn center">
                                     <span class="icon-bell1 shake"></span>
                                 </div>
@@ -1507,7 +2034,7 @@
                                 </p>
                             </div>
                             <div
-                                class="d-flex font-clash-display gap-30 social-tag fw-medium"
+                                class="d-flex flex-wrap font-clash-display gap-30 social-tag fw-medium"
                             >
                                 <div
                                     class="d-flex flex-column align-items-center"
@@ -1534,7 +2061,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-1770 px-75 d-flex justify-content-between py-35 text-primary-2"
+                    class="w-1770 footer-bottom px-75 d-flex justify-content-between py-35 text-primary-2"
                 >
                     <span
                         >Copyright © 2025 Dreamslab by

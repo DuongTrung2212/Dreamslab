@@ -318,7 +318,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 3.91vw;
   border-radius: 8px;
   perspective: 2px;
 }
@@ -376,6 +375,96 @@
   }
   .nav-mobile-btn {
     display: block !important;
+  }
+  .hero-section-top {
+    display: none !important;
+  }
+  .newletter-section {
+    padding: 10px !important;
+  }
+  .swiper-btn-prev {
+    display: none !important;
+  }
+  .swiper-btn-next {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .blog-no-sidebar .card-style-2 {
+    flex-wrap: wrap !important;
+  }
+  .blog-no-sidebar .card-style-2 .img-inner {
+    max-width: 100% !important;
+  }
+  .blog-no-sidebar .card-style-2 .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .author .user {
+    padding-right: 15px;
+  }
+  .author .role {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .author .comment {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .swiper-content {
+    top: 25% !important;
+  }
+  #footer .footer-left,
+  #footer .footer-right,
+  #footer .footer-inner {
+    margin-top: 40px;
+    padding: 10px !important;
+  }
+  #footer .footer-bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  #footer .title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .swipper-section {
+    margin-top: 20px;
+  }
+  .swipper-section .swiper-content {
+    top: 0 !important;
+  }
+  .newletter-section,
+  .contact-cta {
+    display: none !important;
+  }
+  .tag-list {
+    flex-wrap: wrap;
+    gap: 5px !important;
+  }
+  h5 {
+    font-size: 40px !important;
+  }
+  .testimonial {
+    padding: 10px !important;
+  }
+  .testimonial .testimonial-icon {
+    display: none !important;
+  }
+  .blog-detail .content-left {
+    padding-right: 15px !important;
+  }
+  .blog-detail .recent-posts .post-list {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 html,

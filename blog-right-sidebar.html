@@ -490,7 +490,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="d-flex flex-row gap-15">
+                <div class="header-right d-flex flex-row gap-15">
                     <div
                         class="dropdown-hover position-relative border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
                     >
@@ -529,6 +529,519 @@
                         class="border-style-2 p-15 circle-65 center w-fit search-btn bg-hover-white text-hover-black"
                     >
                         <span class="icon-search"></span>
+                    </div>
+                </div>
+                <div
+                    class="nav-mobile-btn"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                >
+                    <span class="icon-menu"></span>
+                </div>
+                <!-- offcanvas -->
+                <div
+                    class="offcanvas offcanvas-start bg-primary"
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                    c
+                >
+                    <div class="offcanvas-header">
+                        <div class="pr-85 border-r h-100 center">
+                            <img
+                                src="image/logo/logo.png"
+                                alt="logo"
+                                class="logo"
+                            />
+                        </div>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        >
+                            <span class="icon-cross text-white"></span>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body bg-transparent">
+                        <div class="position-relative">
+                            <input
+                                class="border-b-style-2 bg-white text-primary-2-placeholder text-black"
+                                type="text"
+                                placeholder="Search..."
+                            />
+                            <span
+                                class="icon-search position-absolute right-0 top-haft translate-middle"
+                            ></span>
+                        </div>
+                        <!-- accordion -->
+                        <div
+                            class="accordion text-uppercase"
+                            id="accordionExample"
+                        >
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo"
+                                    >
+                                        HOME
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div
+                                        class="accordion-body h-556 overflow-y-auto"
+                                    >
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 1
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 2
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="p-10 sub-item">
+                                                        <div
+                                                            class="d-flex flex-column align-items-center"
+                                                        >
+                                                            <img
+                                                                src="https://dreamslab.bravisthemes.com/wp-content/uploads/2025/08/showcase1-581x473.webp"
+                                                            />
+                                                            <a
+                                                                href="#"
+                                                                class="mt-20"
+                                                            >
+                                                                HOME 3
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button after-none collapsed bg-transparent text-white py-0"
+                                    >
+                                        ABOUT STUDIO
+                                    </p>
+                                </h2>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsePage"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapsePage"
+                                    >
+                                        PAGES
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapsePage"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body overflow-y-auto">
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    OUR SERVICE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    SINGLE SERVICE
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >CAREERS</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >FAQS</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    MEET THE TEAM
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    TEAM DETAIL
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    WORKING PROCESS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    TESTIMONIALS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="accordion-item bg-transparent text-white border-0"
+                                                >
+                                                    <h2
+                                                        class="accordion-header"
+                                                    >
+                                                        <p
+                                                            class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseShop"
+                                                            aria-expanded="false"
+                                                            aria-controls="flush-collapseShop"
+                                                        >
+                                                            SHOP
+                                                        </p>
+                                                    </h2>
+                                                    <div
+                                                        id="flush-collapseShop"
+                                                        class="accordion-collapse collapse"
+                                                    >
+                                                        <div
+                                                            class="accordion-body overflow-y-auto"
+                                                        >
+                                                            <ul
+                                                                class="d-flex flex-column"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="py-9 px-26"
+                                                                    >
+                                                                        OUR
+                                                                        SERVICE
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="py-9 px-26"
+                                                                    >
+                                                                        SINGLE
+                                                                        SERVICE
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsePortfolio"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapsePortfolio"
+                                    >
+                                        PORTFOLIO
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapsePortfolio"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body overflow-y-auto">
+                                        <ul class="d-flex flex-column">
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Interactive Showcase
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Grid Masonry
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Full Width</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Classic</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Carousel
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Interactive Links
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Grid Full Width
+                                                </a>
+                                            </li>
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapsePortfolioSingle"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapsePortfolioSingle"
+                                                    >
+                                                        Portfolio Single
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapsePortfolioSingle"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    OUR SERVICE
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    SINGLE
+                                                                    SERVICE
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item bg-transparent text-white border-0 border-b-style-2"
+                            >
+                                <h2 class="accordion-header">
+                                    <p
+                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseBlog"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseBlog"
+                                    >
+                                        BLog
+                                    </p>
+                                </h2>
+                                <div
+                                    id="flush-collapseBlog"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div
+                                        class="accordion-body h-556 overflow-y-auto"
+                                    >
+                                        <ul class="d-flex flex-column">
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0 px-2"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white py-0"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseBlogStandar"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseBlogStandar"
+                                                    >
+                                                        Blog Standar
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseBlogStandar"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Right
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Without
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26">
+                                                    Blog No SideBar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="py-9 px-26"
+                                                    >Blog Colums</a
+                                                >
+                                            </li>
+
+                                            <li
+                                                class="accordion-item bg-transparent text-white border-0"
+                                            >
+                                                <h2 class="accordion-header">
+                                                    <p
+                                                        class="accordion-button collapsed bg-transparent text-white p-0 px-26"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseBlogSingle"
+                                                        aria-expanded="false"
+                                                        aria-controls="flush-collapseBlogSingle"
+                                                    >
+                                                        Blog Single
+                                                    </p>
+                                                </h2>
+                                                <div
+                                                    id="flush-collapseBlogSingle"
+                                                    class="accordion-collapse collapse"
+                                                >
+                                                    <div
+                                                        class="accordion-body overflow-y-auto"
+                                                    >
+                                                        <ul
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Left Sidebar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Right
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="py-9 px-26"
+                                                                >
+                                                                    Without
+                                                                    SideBar
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -1294,9 +1807,11 @@
                 id="footer"
                 class="d-flex flex-column w-full border-t-style-2"
             >
-                <div class="w-100 border-t border-b-style-2">
+                <div class="w-100 footer-top border-t border-b-style-2">
                     <div class="w-1770 row">
-                        <div class="col-4 p-100 px-75 border-l-style-2">
+                        <div
+                            class="footer-left col-xxl-4 col-xl-6 col-lg-6 p-100 px-75 border-l-style-2"
+                        >
                             <a href="#">
                                 <img
                                     src="image/logo/logo.png"
@@ -1322,7 +1837,7 @@
                                 >
                                     <a href="#">
                                         <button
-                                            class="btn-style-1 max-w-325 min-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
+                                            class="btn-style-1 max-w-325 bg-white text-black text-uppercase fw-bold btn-hover-center"
                                         >
                                             <span> let’s work together </span>
                                             <span
@@ -1334,7 +1849,7 @@
                             </div>
                         </div>
                         <div
-                            class="col-4 p-100 px-75 border-r-style-2 border-l-style-2"
+                            class="footer-inner col-xxl-4 col-xl-6 col-lg-6 p-100 px-75 border-r-style-2 border-l-style-2"
                         >
                             <div class="title text-20">
                                 <span
@@ -1401,7 +1916,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-4 p-100 px-75 border-r-style-2">
+                        <div
+                            class="footer-right col-xxl-4 col-xl-12 col-lg-12 p-100 px-75 border-r-style-2"
+                        >
                             <div class="title text-20">
                                 <span
                                     class="fw-semibold text-uppercase font-clash-display"
@@ -1424,7 +1941,9 @@
                                     class="icon-send text-black position-absolute right-20 top-haft translate-middle"
                                 ></span>
                             </div>
-                            <div class="d-flex gap-4 text-decs">
+                            <div
+                                class="d-flex gap-4 text-decs align-items-center"
+                            >
                                 <div class="circle-50 bg-gray-btn center">
                                     <span class="icon-bell1 shake"></span>
                                 </div>
@@ -1435,7 +1954,7 @@
                                 </p>
                             </div>
                             <div
-                                class="d-flex font-clash-display gap-30 social-tag fw-medium"
+                                class="d-flex flex-wrap font-clash-display gap-30 social-tag fw-medium"
                             >
                                 <div
                                     class="d-flex flex-column align-items-center"
@@ -1462,7 +1981,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-1770 px-75 d-flex justify-content-between py-35 text-primary-2"
+                    class="w-1770 footer-bottom px-75 d-flex justify-content-between py-35 text-primary-2"
                 >
                     <span
                         >Copyright © 2025 Dreamslab by
