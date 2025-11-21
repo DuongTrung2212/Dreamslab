@@ -155,6 +155,12 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+.card-style-1 .card-desc span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
 
 .card-post {
   position: absolute;
