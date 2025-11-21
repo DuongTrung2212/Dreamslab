@@ -200,7 +200,12 @@
   position: relative;
   padding-right: 25px;
 }
-.author .user::after {
+.author .role {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.author .role::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -208,12 +213,8 @@
   border-radius: 100%;
   background-color: white;
   top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
-.author .role {
-  padding-left: 25px;
-  padding-right: 25px;
+  left: 0;
+  transform: translate(-50%, -50%);
 }
 .author .comment {
   position: relative;
@@ -405,6 +406,9 @@
   .blog-no-sidebar .card-style-2 .content {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .blog-no-sidebar .card-style-2 .content button {
+    width: 200px !important;
   }
   .author .user {
     padding-right: 15px;

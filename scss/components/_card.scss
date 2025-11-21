@@ -66,6 +66,11 @@
     .user {
         position: relative;
         padding-right: 25px;
+    }
+    .role {
+        position: relative;
+        padding-left: 25px;
+        padding-right: 25px;
         &::after {
             content: "";
             position: absolute;
@@ -74,13 +79,9 @@
             border-radius: 100%;
             background-color: white;
             top: 50%;
-            right: 0;
-            transform: translate(50%, -50%);
+            left: 0;
+            transform: translate(-50%, -50%);
         }
-    }
-    .role {
-        padding-left: 25px;
-        padding-right: 25px;
     }
     .comment {
         position: relative;
