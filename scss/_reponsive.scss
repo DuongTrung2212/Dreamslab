@@ -77,6 +77,12 @@
     .swiper-content {
         top: 25% !important;
     }
+    .testimonial {
+        padding: 10px !important;
+        .testimonial-icon {
+            display: none !important;
+        }
+    }
     #footer {
         .footer-left,
         .footer-right,
@@ -117,12 +123,7 @@
     h5 {
         font-size: 40px !important;
     }
-    .testimonial {
-        padding: 10px !important;
-        .testimonial-icon {
-            display: none !important;
-        }
-    }
+
     .blog-detail {
         .content-left {
             padding-right: 15px !important;

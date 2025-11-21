@@ -41,3 +41,30 @@
     left: 0;
     transform: translate(-50%, -50%);
 }
+
+.home-1-hero {
+    background-image: url("../image/hero/home-1-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-1-hero {
+    .text-hero {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        span {
+            color: #030303;
+        }
+    }
+}
+
+.view-work-section {
+    h6 {
+        max-width: 587px;
+    }
+}
