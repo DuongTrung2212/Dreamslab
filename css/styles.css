@@ -23,7 +23,6 @@
 #header .menu-list .menu-item {
   display: flex;
   margin: 0px 20px;
-  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -42,11 +41,11 @@
   transform: translate3d(8px, 0, 0);
   opacity: 0;
 }
-#header .menu-list .menu-item:hover span {
+#header .menu-list .menu-item .content:hover span {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
-#header .menu-list .menu-item:hover .menu-text {
+#header .menu-list .menu-item .content:hover .menu-text {
   transform: translate3d(8px, 0, 0);
   opacity: 1;
 }
@@ -54,29 +53,31 @@
   display: none;
 }
 
-.home-sub-menu {
-  position: fixed;
-  width: 100vw;
+.mega-menu {
+  position: absolute;
+  width: 100%;
   left: 0;
-  right: 0;
-  top: 121.5px;
-  overflow-y: auto;
+  top: 100%;
   background-color: var(--primary);
+  transform: translateY(100px);
+  overflow-y: auto;
+  height: 100vh;
+  transition: all 0.5s ease;
 }
-.home-sub-menu .sub-menu-list {
-  padding: 30px 60px 0 60px;
+.mega-menu .sub-menu-list {
+  padding: 30px 60px;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.home-sub-menu .sub-menu-list .sub-item {
+.mega-menu .sub-menu-list .sub-item {
   border: 1px solid var(--out-line-2);
   border-radius: 8px;
   padding: 24px;
   font-size: 16px;
   font-weight: 500;
 }
-.home-sub-menu .sub-menu-list .sub-item img {
+.mega-menu .sub-menu-list .sub-item img {
   height: 350px;
 }
 
@@ -369,10 +370,12 @@
   .swiper-btn-prev {
     left: 0;
     transform: translateX(0%) !important;
+    background-color: var(--primary);
   }
   .swiper-btn-next {
     right: 0;
     transform: translateX(0%) !important;
+    background-color: var(--primary);
   }
 }
 @media (max-width: 1024px) {
@@ -854,7 +857,6 @@ a:focus, a:hover {
 }
 
 .tf-container, .w-1620, .w-1770, .w-1850 {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -1739,6 +1741,10 @@ h6 {
 
 .text-hover-underline:hover {
   text-decoration: underline;
+}
+
+.bg-hover-white {
+  transition: all 0.3s ease;
 }
 
 .bg-hover-white:hover {

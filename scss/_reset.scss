@@ -316,7 +316,6 @@ a {
 }
 
 .tf-container {
-    position: relative; //change
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -1221,6 +1220,9 @@ h6 {
     text-decoration: underline;
 }
 
+.bg-hover-white {
+    transition: all 0.3s ease;
+}
 .bg-hover-white:hover {
     background-color: var(--white);
 }

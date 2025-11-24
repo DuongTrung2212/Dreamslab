@@ -6,7 +6,6 @@
         .menu-item {
             display: flex;
             margin: 0px 20px;
-            position: relative;
             align-items: center;
             justify-content: center;
             .menu-text,
@@ -27,14 +26,16 @@
                 transform: translate3d(8px, 0, 0);
                 opacity: 0;
             }
-            &:hover {
-                span {
-                    transform: translate3d(0, 0, 0);
-                    opacity: 1;
-                }
-                .menu-text {
-                    transform: translate3d(8px, 0, 0);
-                    opacity: 1;
+            .content {
+                &:hover {
+                    span {
+                        transform: translate3d(0, 0, 0);
+                        opacity: 1;
+                    }
+                    .menu-text {
+                        transform: translate3d(8px, 0, 0);
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -47,17 +48,18 @@
 .menu-item {
 }
 
-.home-sub-menu {
-    position: fixed;
-    width: 100vw;
+.mega-menu {
+    position: absolute;
+    width: 100%;
     left: 0;
-    right: 0;
-    top: 121.5px;
-    overflow-y: auto;
+    top: 100%;
     background-color: var(--primary);
-
+    transform: translateY(100px);
+    overflow-y: auto;
+    height: 100vh;
+    transition: all 0.5s ease;
     .sub-menu-list {
-        padding: 30px 60px 0 60px;
+        padding: 30px 60px;
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
