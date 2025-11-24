@@ -412,6 +412,10 @@ h6 {
     width: initial;
 }
 
+.w-150 {
+    width: 150px;
+}
+
 .w-160 {
     width: 160px;
 }
@@ -890,6 +894,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .circle-20 {
@@ -1209,11 +1214,18 @@ h6 {
 
 // hover
 
+.text-hover-white {
+    transition: all 0.5s ease;
+}
 .text-hover-white:hover {
-    color: var(--white);
+    transition: all 0.5s ease;
+    color: var(--white) !important;
+}
+.text-hover-black {
+    transition: all 0.5s ease;
 }
 .text-hover-black:hover {
-    color: var(--black-2);
+    color: var(--black-2) !important;
 }
 
 .text-hover-underline:hover {
@@ -1224,7 +1236,13 @@ h6 {
     transition: all 0.3s ease;
 }
 .bg-hover-white:hover {
-    background-color: var(--white);
+    background-color: var(--white) !important;
+}
+.bg-hover-primary {
+    transition: all 0.5s ease;
+}
+.bg-hover-primary:hover {
+    background-color: var(--primary) !important;
 }
 
 .dropdown-center .dropdown-rounded-b-0-active[aria-expanded="true"] {

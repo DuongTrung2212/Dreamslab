@@ -75,6 +75,25 @@
             }
         }
     }
+    .page {
+        .page-select {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease;
+        }
+        img {
+            transition: all 0.5s ease;
+        }
+        &:hover {
+            .page-select {
+                opacity: 1;
+                visibility: visible;
+            }
+            img {
+                filter: blur(10px);
+            }
+        }
+    }
 }
 
 .search-overlay {

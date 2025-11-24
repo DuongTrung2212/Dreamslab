@@ -140,8 +140,20 @@
         }
         $(window).on("scroll", onScroll);
     };
+    var dropDownSelected = function () {
+        $(".dropdown-item").on("click", function () {
+            const selectedText = $(this).text().trim();
+            $(".dropdown-toggle").text(selectedText);
 
+            // đóng dropdown
+            const dropdown = bootstrap.Dropdown.getInstance(
+                $(".dropdown-toggle")[0]
+            );
+            dropdown.hide();
+        });
+    };
     $(function () {
+        dropDownSelected();
         loadProduct();
         activeSearchOverlay();
         new Swiper(".mySwiper", {
