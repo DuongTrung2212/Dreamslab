@@ -132,7 +132,7 @@
   }
 }
 .btn-style-1 {
-  height: 50px !important;
+  height: 55px !important;
   border-radius: 9999px;
   justify-content: space-between;
   text-align: left;
@@ -945,6 +945,10 @@ h6 {
 
 .h-fit {
   height: fit-content !important;
+}
+
+.h-55 {
+  height: 55px;
 }
 
 .h-122 {
