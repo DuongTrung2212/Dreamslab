@@ -30,27 +30,24 @@
 }
 
 .bottom-moving-line-animation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &::after {
+    position: relative;
+    &::before {
         content: "";
-        transition: all 0.5s ease;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        height: 1px;
         width: 0;
-        height: 0px;
-        background-color: rgba(255, 255, 255, 0.25);
-        visibility: hidden;
-        display: inline-block;
+        background: white;
+        transition: all 0.5s linear;
     }
-    &:hover {
-        &::after {
-            width: 100%;
-            visibility: visible;
-            height: 1px;
-            margin-top: 10px;
-        }
+
+    &:hover::before {
+        width: 100%;
     }
 }
+
 .left-moving-animation:hover {
     .icon {
         transform: translateX(0);

@@ -45,7 +45,10 @@
     }
 }
 
-.menu-item {
+.menu-item * {
+    span {
+        color: white;
+    }
 }
 
 .mega-menu {
