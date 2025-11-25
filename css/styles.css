@@ -1909,6 +1909,11 @@ h6 {
     padding: 10px !important;
   }
 }
+@media (max-width: 991px) {
+  .testimonial {
+    padding: 20px !important;
+  }
+}
 @media (max-width: 768px) {
   .blog-no-sidebar .card-style-2 {
     flex-wrap: wrap !important;
