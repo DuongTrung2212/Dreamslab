@@ -9,7 +9,7 @@
             align-items: center;
             justify-content: center;
             .menu-text,
-            span {
+            .prefix {
                 display: inline-block;
                 transition: 0.35s cubic-bezier(0.25, 1, 0.5, 1),
                     opacity 0.35s ease;
@@ -22,13 +22,13 @@
                 opacity: 1;
             }
 
-            span {
+            .prefix {
                 transform: translate3d(8px, 0, 0);
                 opacity: 0;
             }
             .content {
                 &:hover {
-                    span {
+                    .prefix {
                         transform: translate3d(0, 0, 0);
                         opacity: 1;
                     }

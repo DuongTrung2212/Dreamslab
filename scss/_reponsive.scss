@@ -20,6 +20,13 @@
     }
 }
 @media (max-width: 1400px) {
+    .menu-list,
+    .header-right {
+        display: none !important;
+    }
+    .nav-mobile-btn {
+        display: block !important;
+    }
     .footer-left {
         img {
             margin-bottom: 50px !important;
@@ -34,13 +41,6 @@
     }
 }
 @media (max-width: 1024px) {
-    .menu-list,
-    .header-right {
-        display: none !important;
-    }
-    .nav-mobile-btn {
-        display: block !important;
-    }
     .hero-section-top {
         display: none !important;
     }

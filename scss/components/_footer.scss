@@ -5,11 +5,62 @@
     .title {
         margin-bottom: 70px;
     }
-    // .text-inner {
-    //     margin-bottom: 75px;
-    // }
+
     .text-decs {
         margin-top: 40px;
         margin-bottom: 140px;
+    }
+    .link-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .label {
+            transition: color 0.3s ease;
+        }
+
+        .double-dot {
+            position: relative;
+            width: 0;
+            height: 6px;
+            overflow: hidden;
+            transition: width 0.3s ease;
+        }
+
+        .double-dot::before,
+        .double-dot::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .double-dot::before {
+            background-color: var(--primary-2);
+        }
+
+        .double-dot::after {
+            background-color: white;
+        }
+
+        &:hover .double-dot {
+            width: 12px;
+        }
+
+        &:hover .double-dot::before {
+            transform: translate(-150%, -50%);
+            opacity: 1;
+        }
+
+        &:hover .double-dot::after {
+            transform: translate(50%, -50%);
+            opacity: 1;
+        }
     }
 }
