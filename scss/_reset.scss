@@ -1336,11 +1336,6 @@ h6 {
     background-color: var(--primary) !important;
 }
 
-.dropdown-center .dropdown-rounded-b-0-active[aria-expanded="true"] {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-}
-
 .filter-hover-white {
     opacity: 0.2;
     filter: brightness(0) invert(1);
@@ -1353,11 +1348,6 @@ h6 {
 // .dropdown-center .dropdown-border-b-active[aria-expanded="true"] {
 //     border-bottom: 1px solid red;
 // }
-
-.dropdown-center .dropdown-menu.show.dropdown-rounded-t-0-active {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-}
 
 .bg-filter-dark-3 {
     background-color: rgba(0, 0, 0, 0.3);

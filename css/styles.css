@@ -1984,6 +1984,16 @@ h6 {
   max-width: 587px;
 }
 
+.dropdown-center .dropdown-rounded-b-0-active[aria-expanded=true] {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.dropdown-center .dropdown-menu.show.dropdown-rounded-t-0-active {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
 @media (max-width: 1440px) {
   .swiper-btn-prev {
     display: none !important;
