@@ -35,3 +35,37 @@
         transform: translate(50%, -50%) !important;
     }
 }
+
+.home-1-hero-1 {
+    background-image: url("../image/hero/home-1-hero.jpg");
+}
+.home-1-hero-2 {
+    background-image: url("../image/hero/home-1-hero-2.jpg");
+}
+
+.home-1-hero-1,
+.home-1-hero-2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-1-hero-1,
+.home-1-hero-2 {
+    .text-hero {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -250%);
+        span {
+            color: #030303;
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scaleY(2);
+                transform-origin: bottom;
+            }
+        }
+    }
+}

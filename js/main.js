@@ -152,8 +152,60 @@
             dropdown.hide();
         });
     };
+
+    var menuToggle = function () {
+        const $toggleBtn = $(".menu-toggle span");
+        const $menuList = $(".menu-list");
+
+        $toggleBtn.addClass("icon-animate");
+
+        $toggleBtn.on("click", function () {
+            const $icon = $(this);
+
+            if ($menuList.hasClass("d-none")) {
+                $menuList
+                    .removeClass("d-none")
+                    .hide()
+                    .slideDown(300, function () {
+                        $(this).css("display", "flex");
+                    });
+            } else {
+                $menuList.slideUp(300, function () {
+                    $(this).addClass("d-none");
+                });
+            }
+
+            $icon.toggleClass("icon-menuhome icon-close");
+
+            $icon.toggleClass("open");
+        });
+    };
+
+    /* Infinite Slide
+  ----------------------------------------------------------------------------*/
+    var infiniteSlide = function () {
+        $(".infiniteslide").each(function () {
+            var $this = $(this);
+            var style = $this.data("style") || "left";
+            var clone = parseInt($this.data("clone")) || 2;
+            var speed = parseInt($this.data("speed")) || 100;
+
+            if ($("body").hasClass("rtl")) {
+                style = style === "left" ? "right" : "left";
+            }
+
+            $this.infiniteslide({
+                speed: speed,
+                direction: style,
+                clone: clone,
+            });
+        });
+    };
+
     $(function () {
+        infiniteSlide();
         dropDownSelected();
+        menuToggle();
         loadProduct();
         activeSearchOverlay();
         new Swiper(".mySwiper", {

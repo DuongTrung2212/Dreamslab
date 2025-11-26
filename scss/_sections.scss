@@ -33,6 +33,13 @@
         }
     }
 }
+.icon-animate {
+    transition: transform 0.3s ease;
+}
+
+.icon-animate.open {
+    transform: rotate(90deg) scale(1.2);
+}
 
 .bottom-moving-line-animation {
     position: relative;
@@ -83,27 +90,6 @@
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
-}
-
-.home-1-hero {
-    background-image: url("../image/hero/home-1-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.home-1-hero {
-    .text-hero {
-        position: absolute;
-        width: fit-content;
-        height: fit-content;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, -50%);
-        span {
-            color: #030303;
-        }
-    }
 }
 
 .view-work-section {
