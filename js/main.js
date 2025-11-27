@@ -202,7 +202,114 @@
         });
     };
 
+    var orbits = function () {
+        var $canvas = $("#orbitCanvas");
+        var canvas = $canvas[0];
+        var ctx = canvas.getContext("2d");
+
+        // luôn resize canvas theo kích thước .orbit-box
+        function resizeCanvas() {
+            var boxWidth = $canvas.parent().width();
+            var boxHeight = $canvas.parent().height();
+
+            canvas.width = boxWidth;
+            canvas.height = boxHeight;
+        }
+
+        resizeCanvas();
+        $(window).on("resize", resizeCanvas);
+
+        // 3 quỹ đạo
+        var orbits = [
+            { a: 160, b: 30, offsetY: -20, speed: 0.6, phase: 0 },
+            { a: 160, b: 35, offsetY: 0, speed: 0.35, phase: 1.2 },
+            { a: 160, b: 40, offsetY: 20, speed: 0.22, phase: 2.4 },
+        ];
+
+        var lastTime = performance.now();
+
+        function drawEllipse(cx, cy, a, b) {
+            ctx.beginPath();
+            for (var t = 0; t <= Math.PI * 2 + 0.01; t += 0.02) {
+                var x = cx + a * Math.cos(t);
+                var y = cy + b * Math.sin(t);
+                if (t === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = "rgba(255,255,255,0.3)";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+
+        function animate(now) {
+            var dt = (now - lastTime) / 1000;
+            lastTime = now;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            var cx = canvas.width / 2;
+            var cy = canvas.height / 2;
+
+            // vẽ quỹ đạo
+            $.each(orbits, function (i, o) {
+                drawEllipse(cx, cy + o.offsetY, o.a, o.b);
+            });
+
+            // vẽ các chấm chạy
+            $.each(orbits, function (i, o) {
+                o.phase += o.speed * dt;
+
+                var x = cx + o.a * Math.cos(o.phase);
+                var y = cy + o.b * Math.sin(o.phase) + o.offsetY;
+
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fillStyle = "#ffffff";
+                ctx.fill();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
+    };
+
+    var activeAccordion = function () {
+        $(function () {
+            $(".service-item")
+                .removeClass("active")
+                .find(".service-body")
+                .hide();
+
+            $(".service-item")
+                .first()
+                .addClass("active")
+                .find(".service-body")
+                .show();
+
+            $(".service-header").on("click", function () {
+                var $item = $(this).closest(".service-item");
+
+                // if ($item.hasClass("active")) {
+                //     $item.removeClass("active");
+                //     $item.find(".service-body").stop().slideUp(300);
+                // } else {
+                $(".service-item.active")
+                    .removeClass("active")
+                    .find(".service-body")
+                    .stop()
+                    .slideUp(300);
+
+                $item.addClass("active");
+                $item.find(".service-body").stop().slideDown(300);
+                // }
+            });
+        });
+    };
+
     $(function () {
+        orbits();
+        activeAccordion();
         infiniteSlide();
         dropDownSelected();
         menuToggle();

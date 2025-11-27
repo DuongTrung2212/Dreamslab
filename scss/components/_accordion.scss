@@ -1,0 +1,25 @@
+/* ==== STATE ACTIVE (ITEM ĐANG MỞ) ==== */
+
+.service-item.active {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.service-item.active .service-body {
+    display: block;
+}
+
+.service-item.active .service-icon {
+    opacity: 1;
+}
+
+.service-item.active .service-title {
+    opacity: 1;
+}
+
+/* ẩn mô tả của item chưa active, chỉ hiện mô tả của item đang mở */
+.service-item .service-desc {
+    display: none;
+}
+.service-item.active .service-desc {
+    display: block;
+}

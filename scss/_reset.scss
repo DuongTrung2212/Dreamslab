@@ -580,6 +580,10 @@ h6 {
     padding: 100px;
 }
 
+.p-150 {
+    padding: 150px;
+}
+
 .pt-15 {
     padding-top: 15px;
 }
@@ -694,6 +698,11 @@ h6 {
     padding-right: 35px;
 }
 
+.px-50 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
 .px-60 {
     padding-left: 60px !important;
     padding-right: 60px !important;
@@ -722,6 +731,10 @@ h6 {
 .px-85 {
     padding-left: 85px;
     padding-right: 85px;
+}
+.px-150 {
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .py-9 {
@@ -833,6 +846,11 @@ h6 {
 .text-primary-4 {
     color: var(--gray);
 }
+
+.text-gray {
+    color: var(--gray);
+}
+
 // line height
 
 .line-height-33 {
@@ -1149,6 +1167,13 @@ h6 {
 
 .gap-80 {
     gap: 80px;
+}
+
+//gutter
+
+.g-80 {
+    --bs-gutter-x: 80px;
+    --bs-gutter-y: 80px;
 }
 
 .parent-menu {
