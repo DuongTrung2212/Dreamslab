@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icomoon.eot?vjovug');
-  src:  url('icomoon.eot?vjovug#iefix') format('embedded-opentype'),
-    url('icomoon.ttf?vjovug') format('truetype'),
-    url('icomoon.woff?vjovug') format('woff'),
-    url('icomoon.svg?vjovug#icomoon') format('svg');
+  src:  url('icomoon.eot?s6a3r3');
+  src:  url('icomoon.eot?s6a3r3#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?s6a3r3') format('truetype'),
+    url('icomoon.woff?s6a3r3') format('woff'),
+    url('icomoon.svg?s6a3r3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-CS_Moon_6:before {
+  content: "\f0d4";
+  color: #f8f8f8;
+}
 .icon-close:before {
   content: "\f0d3";
 }

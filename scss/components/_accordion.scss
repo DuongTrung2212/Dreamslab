@@ -1,25 +1,25 @@
 /* ==== STATE ACTIVE (ITEM ĐANG MỞ) ==== */
 
-.service-item.active {
+.wg-accordion-item.active.wg-accordion-active-style {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.service-item.active .service-body {
+
+.wg-accordion-item.active .wg-accordion-body {
     display: block;
 }
 
-.service-item.active .service-icon {
+.wg-accordion-item.active .wg-accordion-icon {
     opacity: 1;
 }
 
-.service-item.active .service-title {
+.wg-accordion-item.active .wg-accordion-title {
     opacity: 1;
 }
 
-/* ẩn mô tả của item chưa active, chỉ hiện mô tả của item đang mở */
-.service-item .service-desc {
+.wg-accordion-item .wg-accordion-desc {
     display: none;
 }
-.service-item.active .service-desc {
+.wg-accordion-item.active .wg-accordion-desc {
     display: block;
 }

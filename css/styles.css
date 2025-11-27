@@ -564,6 +564,10 @@ h6 {
   height: 385px;
 }
 
+.h-425 {
+  height: 425px;
+}
+
 .h-556 {
   height: 556px;
 }
@@ -631,6 +635,10 @@ h6 {
 
 .p-20 {
   padding: 20px;
+}
+
+.p-25 {
+  padding: 25px !important;
 }
 
 .p-30 {
@@ -731,6 +739,10 @@ h6 {
 
 .pr-125 {
   padding-right: 125px;
+}
+
+.pl-3 {
+  padding-left: 3px !important;
 }
 
 .pl-20 {
@@ -881,6 +893,10 @@ h6 {
 .py-125 {
   padding-top: 125px !important;
   padding-bottom: 125px !important;
+}
+
+.text-12 {
+  font-size: 12px;
 }
 
 .text-14 {
@@ -1904,29 +1920,28 @@ h6 {
 }
 
 /* ==== STATE ACTIVE (ITEM ĐANG MỞ) ==== */
-.service-item.active {
+.wg-accordion-item.active.wg-accordion-active-style {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.service-item.active .service-body {
+.wg-accordion-item.active .wg-accordion-body {
   display: block;
 }
 
-.service-item.active .service-icon {
+.wg-accordion-item.active .wg-accordion-icon {
   opacity: 1;
 }
 
-.service-item.active .service-title {
+.wg-accordion-item.active .wg-accordion-title {
   opacity: 1;
 }
 
-/* ẩn mô tả của item chưa active, chỉ hiện mô tả của item đang mở */
-.service-item .service-desc {
+.wg-accordion-item .wg-accordion-desc {
   display: none;
 }
 
-.service-item.active .service-desc {
+.wg-accordion-item.active .wg-accordion-desc {
   display: block;
 }
 

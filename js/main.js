@@ -275,39 +275,54 @@
     };
 
     var activeAccordion = function () {
-        $(function () {
-            $(".service-item")
+        // Ẩn tất cả body
+        $(".wg-accordion-item .wg-accordion-body").hide();
+
+        $(".wg-accordion-item.active .wg-accordion-body").show();
+
+        // Click event
+        $(".wg-accordion-header").on("click", function () {
+            var $accordion = $(this).closest(".wg-accordion");
+            var $item = $(this).closest(".wg-accordion-item");
+
+            $accordion
+                .find(".wg-accordion-item.active")
                 .removeClass("active")
-                .find(".service-body")
-                .hide();
+                .find(".wg-accordion-body")
+                .stop()
+                .slideUp(300);
 
-            $(".service-item")
-                .first()
-                .addClass("active")
-                .find(".service-body")
-                .show();
+            $item.addClass("active");
+            $item.find(".wg-accordion-body").stop().slideDown(300);
+        });
+    };
 
-            $(".service-header").on("click", function () {
-                var $item = $(this).closest(".service-item");
+    var numberBars = function () {
+        $(".numbers-bars").each(function () {
+            var $chart = $(this);
+            var $bars = $chart.find("[data-value]");
 
-                // if ($item.hasClass("active")) {
-                //     $item.removeClass("active");
-                //     $item.find(".service-body").stop().slideUp(300);
-                // } else {
-                $(".service-item.active")
-                    .removeClass("active")
-                    .find(".service-body")
-                    .stop()
-                    .slideUp(300);
+            var values = $bars
+                .map(function () {
+                    return Number($(this).data("value")) || 0;
+                })
+                .get();
 
-                $item.addClass("active");
-                $item.find(".service-body").stop().slideDown(300);
-                // }
+            var max = Math.max.apply(null, values);
+
+            $bars.each(function () {
+                var $el = $(this);
+                var v = Number($el.data("value")) || 0;
+
+                var percent = 25 + (v / max) * 75;
+
+                $el.css("height", percent + "%");
             });
         });
     };
 
     $(function () {
+        numberBars();
         orbits();
         activeAccordion();
         infiniteSlide();
