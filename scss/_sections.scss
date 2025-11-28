@@ -1,3 +1,16 @@
+// widget
+
+.wg-heading-text {
+    font-family: "ClashDisplay", sans-serif;
+    color: #c2c2c2;
+    -webkit-text-stroke-color: #c2c2c2;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+}
+
 .left-moving-animation::before {
     width: 0;
     opacity: 0;
@@ -68,6 +81,10 @@
     color: var(--black) !important;
 }
 
+.right-dot,
+.left-dot {
+    position: relative;
+}
 .right-dot::before {
     content: "";
     position: absolute;
@@ -78,6 +95,15 @@
     top: 50%;
     right: 0;
     transform: translate(50%, -50%);
+}
+
+.dot-black {
+    &::after {
+        background-color: black !important;
+    }
+    &::before {
+        background-color: black !important;
+    }
 }
 
 .left-dot::before {

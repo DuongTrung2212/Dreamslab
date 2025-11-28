@@ -23,3 +23,27 @@
 .wg-accordion-item.active .wg-accordion-desc {
     display: block;
 }
+.wg-accordion {
+    .wg-accordion-header {
+        cursor: pointer;
+    }
+    .wg-accordion-item {
+        position: relative;
+    }
+}
+
+.wg-accordion-item.wg-accordion-right-icon::after {
+    content: "+";
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.wg-accordion-item.active.wg-accordion-right-icon::after {
+    content: "-";
+    transform: translateY(-50%) rotate(180deg);
+}
