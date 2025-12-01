@@ -621,6 +621,10 @@ h6 {
   margin: auto;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -657,12 +661,32 @@ h6 {
   margin-top: 250px;
 }
 
+.-ml-one-fourth {
+  margin-left: -25%;
+}
+
+.-ml-10 {
+  margin-left: -10px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
 .ml-70 {
   margin-left: 70px;
 }
 
 .ml-235 {
   margin-left: 235px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .mb-40 {
@@ -677,8 +701,16 @@ h6 {
   margin-bottom: 75px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .mb-85 {
   margin-bottom: 85px !important;
+}
+
+.mb-115 {
+  margin-bottom: 115px;
 }
 
 .mb-150 {
@@ -689,9 +721,18 @@ h6 {
   margin-bottom: 135px !important;
 }
 
+.mb-140 {
+  margin-bottom: 130px;
+}
+
 .mx-130 {
   margin-left: 130px;
   margin-right: 130px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .p-15 {
@@ -750,8 +791,12 @@ h6 {
   padding-top: 30px;
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
 .pt-50 {
-  padding-top: 50px;
+  padding-top: 50px !important;
 }
 
 .pt-80 {
@@ -760,6 +805,10 @@ h6 {
 
 .pt-100 {
   padding-top: 100px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .pb-30 {
@@ -1030,6 +1079,10 @@ h6 {
   font-size: 40px;
 }
 
+.text-100 {
+  font-size: 100px;
+}
+
 .text-150 {
   font-size: 150px;
 }
@@ -1052,6 +1105,18 @@ h6 {
 
 .line-height-33 {
   line-height: 33px !important;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.ls-3 {
+  letter-spacing: 3px;
 }
 
 .font-satoshi {
@@ -1187,6 +1252,7 @@ h6 {
 
 .circle, .circle-200, .circle-100, .circle-90, .circle-75, .circle-70, .circle-65, .circle-50, .circle-40, .circle-30, .circle-25, .circle-20 {
   border-radius: 50%;
+  padding: 0;
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
@@ -1355,6 +1421,11 @@ h6 {
   gap: 80px;
 }
 
+.g-30 {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 30px;
+}
+
 .g-80 {
   --bs-gutter-x: 80px;
   --bs-gutter-y: 80px;
@@ -1402,6 +1473,10 @@ h6 {
   transform: translateY(-100px);
 }
 
+.-translate-x-one-fourth {
+  transform: translateX(-25%);
+}
+
 .-translate-y-haft {
   transform: translateY(-50%);
 }
@@ -1432,6 +1507,14 @@ h6 {
 
 .rotate-270 {
   transform: rotate(270deg) !important;
+}
+
+.testimonial-drag-circle {
+  cursor: grab;
+}
+
+.testimonial-drag-circle:active {
+  cursor: grabbing;
 }
 
 .shake {
@@ -1483,6 +1566,11 @@ h6 {
   position: absolute;
   left: -15px;
   top: 10px;
+}
+
+.avatar-70 {
+  width: 70px;
+  height: 70px;
 }
 
 .after-none::after {
@@ -1554,6 +1642,14 @@ h6 {
   text-decoration: underline;
 }
 
+.rotate-180-hover {
+  transition: all 0.5s ease;
+}
+
+.rotate-180-hover:hover {
+  transform: rotate(180deg);
+}
+
 .bg-hover-white {
   transition: all 0.3s ease;
 }
@@ -1568,6 +1664,11 @@ h6 {
 
 .bg-hover-primary:hover {
   background-color: var(--primary) !important;
+}
+
+.filter-white {
+  opacity: 1;
+  filter: brightness(0) invert(1);
 }
 
 .filter-hover-white {
@@ -1967,15 +2068,21 @@ h6 {
   background-image: url("../image/hero/home-1-hero-2.jpg");
 }
 
+.home-1-hero-3 {
+  background-image: url("../image/hero/home-1-hero-3.jpg");
+}
+
 .home-1-hero-1,
-.home-1-hero-2 {
+.home-1-hero-2,
+.home-1-hero-3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
-
 .home-1-hero-1 .text-hero,
-.home-1-hero-2 .text-hero {
+.home-1-hero-2 .text-hero,
+.home-1-hero-3 .text-hero {
   position: absolute;
   width: fit-content;
   height: fit-content;
@@ -1984,14 +2091,21 @@ h6 {
   transform: translate(-50%, -250%);
 }
 .home-1-hero-1 .text-hero span,
-.home-1-hero-2 .text-hero span {
+.home-1-hero-2 .text-hero span,
+.home-1-hero-3 .text-hero span {
   color: #030303;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .home-1-hero-1 .text-hero span:hover,
-.home-1-hero-2 .text-hero span:hover {
+.home-1-hero-2 .text-hero span:hover,
+.home-1-hero-3 .text-hero span:hover {
   transform: scaleY(2);
   transform-origin: bottom;
+}
+
+.home-1-hero-3 .text-hero span {
+  color: #ffffff;
 }
 
 #footer .footer-logo {
@@ -2215,6 +2329,17 @@ h6 {
 
 .view-work-section h6 {
   max-width: 587px;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .dropdown-center .dropdown-rounded-b-0-active[aria-expanded=true] {

@@ -42,16 +42,21 @@
 .home-1-hero-2 {
     background-image: url("../image/hero/home-1-hero-2.jpg");
 }
-
+.home-1-hero-3 {
+    background-image: url("../image/hero/home-1-hero-3.jpg");
+}
 .home-1-hero-1,
-.home-1-hero-2 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.home-1-hero-2,
+.home-1-hero-3 {
 }
 
 .home-1-hero-1,
-.home-1-hero-2 {
+.home-1-hero-2,
+.home-1-hero-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
     .text-hero {
         position: absolute;
         width: fit-content;
@@ -62,10 +67,18 @@
         span {
             color: #030303;
             transition: all 0.5s ease;
+            cursor: pointer;
             &:hover {
                 transform: scaleY(2);
                 transform-origin: bottom;
             }
+        }
+    }
+}
+.home-1-hero-3 {
+    .text-hero {
+        span {
+            color: #ffffff;
         }
     }
 }
