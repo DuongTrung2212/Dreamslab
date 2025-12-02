@@ -448,6 +448,9 @@ h6 {
     min-width: 325px;
 }
 
+.max-w-160 {
+    max-width: 160px;
+}
 .max-w-325 {
     max-width: 325px;
 }
@@ -538,6 +541,10 @@ h6 {
 
 .max-h-400 {
     max-height: 400px;
+}
+.min-h-425 {
+    height: 100%;
+    min-height: 425px;
 }
 
 // margin

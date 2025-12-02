@@ -20,8 +20,22 @@
     }
 }
 @media (max-width: 1400px) {
+    .contact {
+        .address,
+        .phone,
+        .mail {
+            margin-left: 15px;
+        }
+        .social-list {
+            display: none !important;
+        }
+    }
     .menu-list,
     .header-right {
+        display: none !important;
+    }
+    .icon-menuhome,
+    .icon-close {
         display: none !important;
     }
     .nav-mobile-btn {
@@ -57,6 +71,17 @@
     }
 }
 @media (max-width: 820px) {
+    .home-1 {
+        .contact {
+            display: flex;
+            flex-direction: column;
+            .contact-info {
+                display: none !important;
+                // padding-top: 50px;
+                // padding-bottom: 50px;
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
     .blog-no-sidebar {

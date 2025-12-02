@@ -320,7 +320,18 @@
             });
         });
     };
-
+    var initSwipper = function () {
+        new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-btn-next",
+                prevEl: ".swiper-btn-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    };
     $(function () {
         numberBars();
         orbits();
@@ -330,11 +341,6 @@
         menuToggle();
         loadProduct();
         activeSearchOverlay();
-        new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-btn-next",
-                prevEl: ".swiper-btn-prev",
-            },
-        });
+        initSwipper();
     });
 })(jQuery);

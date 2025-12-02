@@ -143,6 +143,17 @@
     border-top-right-radius: 0 !important;
 }
 
+// home-1
+.contact {
+    .address,
+    .phone,
+    .mail {
+        margin-left: 70px;
+    }
+    .numbers-bars {
+        height: 425px !important;
+    }
+}
 .orbit-box {
     position: relative;
     width: 100%;
