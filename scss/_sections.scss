@@ -80,7 +80,7 @@
 .text-primary-2-placeholder::placeholder {
     color: var(--black) !important;
 }
-
+// dot
 .right-dot,
 .left-dot {
     position: relative;
@@ -142,7 +142,15 @@
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }
-
+// swiper
+.swiper-white-pagination {
+    .swiper-pagination-bullet {
+        background-color: white;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+}
 // home-1
 .contact {
     .address,

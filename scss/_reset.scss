@@ -323,7 +323,10 @@ a {
     max-width: 1320px;
     width: 100%;
 }
-
+.full {
+    @extend .tf-container;
+    width: 100%;
+}
 .w-1850 {
     @extend .tf-container;
     width: 100%;
@@ -1488,6 +1491,25 @@ h6 {
 }
 
 // dropdown-hover
+// dot
+.dot {
+    flex: 0 0 auto;
+    display: flex;
+    border-radius: 50%;
+    padding: 0;
+    border-radius: 100%;
+    background-color: white;
+}
+.dot-10 {
+    @extend .dot;
+    width: 10px;
+    height: 10px;
+}
+.dot-20 {
+    @extend .dot;
+    width: 20px;
+    height: 20px;
+}
 
 // after
 

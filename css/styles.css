@@ -391,12 +391,16 @@ a:focus, a:hover {
   color: var(--white) !important;
 }
 
-.tf-container, .w-1620, .w-1770, .w-1850 {
+.tf-container, .w-1620, .w-1770, .w-1850, .full {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
   max-width: 1320px;
+  width: 100%;
+}
+
+.full {
   width: 100%;
 }
 
@@ -1582,6 +1586,25 @@ h6 {
   height: 70px;
 }
 
+.dot, .dot-20, .dot-10 {
+  flex: 0 0 auto;
+  display: flex;
+  border-radius: 50%;
+  padding: 0;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.dot-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.dot-20 {
+  width: 20px;
+  height: 20px;
+}
+
 .after-none::after {
   display: none !important;
 }
@@ -2359,6 +2382,13 @@ h6 {
 .dropdown-center .dropdown-menu.show.dropdown-rounded-t-0-active {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
+}
+
+.swiper-white-pagination .swiper-pagination-bullet {
+  background-color: white;
+}
+.swiper-white-pagination .swiper-pagination-bullet-active {
+  background-color: white;
 }
 
 .contact .address,

@@ -320,19 +320,67 @@
             });
         });
     };
-    var initSwipper = function () {
-        new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-btn-next",
-                prevEl: ".swiper-btn-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+    function initSwiper() {
+        $(".classic-swiper").each(function (i) {
+            var $swiper = $(this);
+            var $scope = $swiper.parent();
+
+            var nextBtn = $scope.find(".swiper-btn-next")[0];
+            var prevBtn = $scope.find(".swiper-btn-prev")[0];
+            var paginationEl = $swiper.find(".swiper-pagination")[0];
+
+            // ----- DEFAULT -----
+            var defaultSlidesPerView = 1;
+            var defaultSpaceBetween = 0;
+            var defaultAutoHeight = false;
+
+            // ----- ĐỌC DATA-ATTRIBUTE (attr cho chắc, khỏi dính camelCase) -----
+            var dataSlides = $swiper.attr("data-slides");
+            var dataSpace = $swiper.attr("data-space");
+            var dataAutoHeight = $swiper.attr("data-auto-height");
+
+            var slidesPerView = dataSlides
+                ? parseInt(dataSlides, 10)
+                : defaultSlidesPerView;
+            var spaceBetween = dataSpace
+                ? parseInt(dataSpace, 10)
+                : defaultSpaceBetween;
+
+            var autoHeight = defaultAutoHeight;
+            if (typeof dataAutoHeight !== "undefined") {
+                // chỉ override nếu có data-auto-height
+                autoHeight = String(dataAutoHeight).toLowerCase() === "true";
+            }
+
+            console.log("swiper", i, {
+                slidesPerView,
+                spaceBetween,
+                autoHeight,
+            });
+
+            var navigation = {};
+            if (nextBtn) navigation.nextEl = nextBtn;
+            if (prevBtn) navigation.prevEl = prevBtn;
+
+            var pagination = paginationEl
+                ? {
+                      el: paginationEl,
+                      clickable: true,
+                  }
+                : null;
+
+            new Swiper($swiper[0], {
+                slidesPerView: slidesPerView,
+                spaceBetween: spaceBetween,
+                autoHeight: autoHeight,
+                ...(Object.keys(navigation).length ? { navigation } : {}),
+                ...(pagination ? { pagination } : {}),
+            });
         });
-    };
+    }
+
     $(function () {
+        initSwiper();
         numberBars();
         orbits();
         activeAccordion();
@@ -341,6 +389,5 @@
         menuToggle();
         loadProduct();
         activeSearchOverlay();
-        initSwipper();
     });
 })(jQuery);

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .swiper {
+                width: 100%;
+                max-width: 400px;
+            }
+            .swiper-slide {
+                padding: 20px;
+                border: 1px solid #ddd;
+                background: #f9f9f9;
+            }
+        </style>
+    </head>
+    <body>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <div class="col-md-6 offset-md-1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <form>
+                            <label class="form-label">Your Name*</label>
+                            <input
+                                type="text"
+                                class="contact-input border-style-2"
+                                placeholder="[your-name]"
+                            />
+                        </form>
+                    </div>
+                    <div class="swiper-slide">
+                        <form>
+                            <label class="form-label">Your Mail*</label>
+                            <input
+                                type="text"
+                                class="contact-input border-style-2"
+                                placeholder="[your-mail]"
+                            />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="swiper-btn-next">
+                    <span class="icon-right-arrow">Next 1</span>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- swiper thứ 2 -->
+        <div class="col-md-6 offset-md-1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>Form khác – slide 1</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>Form khác – slide 2</p>
+                    </div>
+                </div>
+
+                <div class="swiper-btn-next">
+                    <span class="icon-right-arrow">Next 2</span>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            (function ($) {
+                function initSwipper() {
+                    $(".mySwiper").each(function () {
+                        var $wrap = $(this);
+
+                        var nextBtn = $wrap.find(".swiper-btn-next")[0];
+                        var paginationEl = $wrap.find(".swiper-pagination")[0];
+
+                        new Swiper(this, {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            navigation: {
+                                nextEl: nextBtn,
+                            },
+                            pagination: {
+                                el: paginationEl,
+                                clickable: true,
+                            },
+                        });
+                    });
+                }
+
+                $(function () {
+                    // Tạm thời bỏ hết mấy hàm khác để test riêng Swiper
+                    // numberBars();
+                    // orbits();
+                    // ...
+
+                    initSwipper();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
