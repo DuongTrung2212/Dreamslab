@@ -1,5 +1,10 @@
 /* ==== STATE ACTIVE (ITEM ĐANG MỞ) ==== */
-
+.wg-accordion-item {
+    align-items: center;
+}
+.wg-accordion-item.active {
+    align-items: baseline;
+}
 .wg-accordion-item.active.wg-accordion-active-style {
     padding-top: 100px;
     padding-bottom: 100px;

@@ -78,6 +78,13 @@
     }
 }
 @media (max-width: 1024px) {
+    .home-1 {
+        .about-section {
+            .title {
+                padding-bottom: 20px !important;
+            }
+        }
+    }
     .double-box {
         position: relative !important;
         transform: translate(0);
@@ -221,6 +228,12 @@
             line-height: 50px;
         }
     }
+    .our-service-section {
+        .left-our-service {
+            padding: 15px !important;
+            border: 0;
+        }
+    }
     .project-section {
         .title {
             font-size: 50px !important;
@@ -242,6 +255,17 @@
             }
         }
     }
+    .wg-accordion-item {
+        padding-left: 15px;
+        padding-right: 15px;
+        .wg-accordion-content {
+            padding: 15px !important;
+            padding-right: 15px !important;
+            .service-title {
+                // padding: 0px !important;
+            }
+        }
+    }
     .author {
         .user {
             padding-right: 15px;
@@ -256,17 +280,29 @@
     }
 }
 @media (max-width: 575px) {
-    .hero-section {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-    .swiper-content {
-        top: 25% !important;
-    }
-    .testimonial {
-        padding: 10px !important;
-        .testimonial-icon {
-            display: none !important;
+    .home-1 {
+        .right-about {
+            .right-about-content {
+                padding: 15px !important;
+            }
+        }
+        .hero-section {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+        .operate-section {
+            .right-operate {
+                padding: 15px !important;
+            }
+        }
+        .swiper-content {
+            top: 25% !important;
+        }
+        .testimonial {
+            padding: 10px !important;
+            .testimonial-icon {
+                display: none !important;
+            }
         }
     }
     #footer {
@@ -288,6 +324,21 @@
     }
 }
 @media (max-width: 425px) {
+    .home-1 {
+        .wg-accordion-item {
+            .service-icon {
+                display: none;
+            }
+        }
+        .numbers-bars {
+            .bar-item {
+                padding: 5px !important;
+            }
+            .bar-text {
+                font-size: 8px;
+            }
+        }
+    }
 }
 @media (max-width: 375px) {
 }

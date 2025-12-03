@@ -756,6 +756,18 @@ h6,
   margin-top: 250px;
 }
 
+.-mt-haft {
+  margin-top: -50%;
+}
+
+.-mt-250 {
+  margin-top: -250px;
+}
+
+.-mt-430 {
+  margin-top: -430px;
+}
+
 .-ml-one-fourth {
   margin-left: -25%;
 }
@@ -1293,12 +1305,20 @@ h6,
   top: 50%;
 }
 
+.top-15 {
+  top: 15px;
+}
+
 .top-122 {
   top: 122px;
 }
 
 .bottom {
   bottom: 100%;
+}
+
+.bottom-15 {
+  bottom: 15px;
 }
 
 .right-0 {
@@ -1335,6 +1355,10 @@ h6,
 
 .left-0 {
   left: 0;
+}
+
+.left-15 {
+  left: 15px;
 }
 
 .left-haft {
@@ -2279,6 +2303,14 @@ h6,
 }
 
 /* ==== STATE ACTIVE (ITEM ĐANG MỞ) ==== */
+.wg-accordion-item {
+  align-items: center;
+}
+
+.wg-accordion-item.active {
+  align-items: baseline;
+}
+
 .wg-accordion-item.active.wg-accordion-active-style {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -2563,6 +2595,9 @@ h6,
   }
 }
 @media (max-width: 1024px) {
+  .home-1 .about-section .title {
+    padding-bottom: 20px !important;
+  }
   .double-box {
     position: relative !important;
     transform: translate(0);
@@ -2693,6 +2728,10 @@ h6,
     font-size: 100px;
     line-height: 50px;
   }
+  .our-service-section .left-our-service {
+    padding: 15px !important;
+    border: 0;
+  }
   .project-section .title {
     font-size: 50px !important;
   }
@@ -2709,6 +2748,14 @@ h6,
   .blog-no-sidebar .card-style-2 .content button {
     width: 200px !important;
   }
+  .wg-accordion-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .wg-accordion-item .wg-accordion-content {
+    padding: 15px !important;
+    padding-right: 15px !important;
+  }
   .author .user {
     padding-right: 15px;
   }
@@ -2721,17 +2768,23 @@ h6,
   }
 }
 @media (max-width: 575px) {
-  .hero-section {
+  .home-1 .right-about .right-about-content {
+    padding: 15px !important;
+  }
+  .home-1 .hero-section {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-  .swiper-content {
+  .home-1 .operate-section .right-operate {
+    padding: 15px !important;
+  }
+  .home-1 .swiper-content {
     top: 25% !important;
   }
-  .testimonial {
+  .home-1 .testimonial {
     padding: 10px !important;
   }
-  .testimonial .testimonial-icon {
+  .home-1 .testimonial .testimonial-icon {
     display: none !important;
   }
   #footer .footer-left,
@@ -2748,6 +2801,17 @@ h6,
   }
   #footer .title {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .home-1 .wg-accordion-item .service-icon {
+    display: none;
+  }
+  .home-1 .numbers-bars .bar-item {
+    padding: 5px !important;
+  }
+  .home-1 .numbers-bars .bar-text {
+    font-size: 8px;
   }
 }
 @media (max-width: 320px) {
