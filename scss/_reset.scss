@@ -1587,6 +1587,11 @@ h6,
     border-radius: 100%;
     background-color: white;
 }
+.dot-5 {
+    @extend .dot;
+    width: 5px;
+    height: 5px;
+}
 .dot-10 {
     @extend .dot;
     width: 10px;
