@@ -63,13 +63,13 @@
         height: fit-content;
         left: 50%;
         bottom: 0;
-        transform: translate(-50%, -250%);
+        transform: translate(-50%, -120%);
         span {
             color: #030303;
             transition: all 0.5s ease;
             cursor: pointer;
             &:hover {
-                transform: scaleY(2);
+                transform: scaleY(1.8);
                 transform-origin: bottom;
             }
         }
