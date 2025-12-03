@@ -275,15 +275,18 @@
     };
 
     var activeAccordion = function () {
-        // Ẩn tất cả body
         $(".wg-accordion-item .wg-accordion-body").hide();
-
         $(".wg-accordion-item.active .wg-accordion-body").show();
 
-        // Click event
         $(".wg-accordion-header").on("click", function () {
-            var $accordion = $(this).closest(".wg-accordion");
             var $item = $(this).closest(".wg-accordion-item");
+            var $accordion = $(this).closest(".wg-accordion");
+
+            // if ($item.hasClass("active")) {
+            //     $item.removeClass("active");
+            //     $item.find(".wg-accordion-body").stop().slideUp(300);
+            //     return;
+            // }
 
             $accordion
                 .find(".wg-accordion-item.active")
